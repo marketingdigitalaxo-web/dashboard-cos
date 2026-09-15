@@ -102,7 +102,9 @@ Purchase (% que compra desde quienes agregaron al carro) → conversión
 total (Purchase / View) → ingresos. Esto es lo que te deja ver, por
 ejemplo, si una campaña tiene buen CTR pero se cae en "agregar al
 carro" — el problema no es que no llame la atención, es lo que pasa
-después del click.
+después del click. Esta tabla puede tener cientos de filas, así que
+se deja con alto fijo (~10 filas) y scroll interno propio, con el
+encabezado siempre visible.
 Tabla por tipo de campaña: cuántas campañas de ese tipo se han corrido,
 ingresos totales e ingresos promedio por campaña — para comparar, por
 ejemplo, si vale la pena seguir usando cierto tipo de campaña dado lo
@@ -119,6 +121,9 @@ otro período — al activarlo, el gráfico de ingresos superpone ambos
 períodos alineados por "día 1, día 2..." (no por fecha calendario, para
 poder comparar peras con peras aunque los meses tengan distinto largo), y
 las tablas agregan columnas del período anterior + variación %.
+Posición (#): las tablas de Marca, Campaña y Tipo de campaña traen
+una primera columna "#" con el número de fila tal como se ve en
+pantalla — si ordenas por otra columna, se recalcula sola.
 Ordenar tablas: en cualquier tabla (incluidas las que aparecen al
 hacer "Ver como tabla" en un gráfico), un clic en el nombre de una
 columna la ordena de mayor a menor según esa columna; un segundo clic
@@ -151,6 +156,12 @@ un color nuevo.
 Nombre de la pestaña / hoja que se lee: variable `SHEET_NAME` en
 `scripts/fetch_data.py` (o el secreto de entorno `SHEET_NAME` en el
 workflow, si prefieres no tocar el código).
+Nombres amigables de "Tipo de campaña": objeto `TIPO_LABELS` al
+inicio de `app.js` — mapea el `emarsys_campaign_id` tal como viene de
+la hoja (ej. `pers-banner-plp`) a un nombre más legible (ej.
+`Banner PLP`). Un tipo que no esté en la lista se muestra tal cual
+viene de la hoja (no desaparece), así que puedes ir agregando alias
+de a poco.
 6. Probar en tu computador antes de publicar
 No necesitas Node ni build tools. Desde esta carpeta:
 ```bash
