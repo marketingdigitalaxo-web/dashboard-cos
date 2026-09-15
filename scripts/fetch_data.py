@@ -121,7 +121,23 @@ def main():
     except gspread.exceptions.WorksheetNotFound:
         sys.exit(f"No existe una pestaña llamada '{SHEET_NAME}' en la planilla.")
 
-    registros = ws.get_all_records(expected_headers=list(COLUMNAS.values()))
+    # ---- DIAGNÓSTICO TEMPORAL (borrar cuando ya cuadren los números) ----
+    encabezado_real = ws.row_values(1)
+    print("DEBUG encabezado real de la hoja:", [repr(h) for h in encabezado_real])
+    print("DEBUG encabezado esperado       :", [repr(h) for h in COLUMNAS.values()])
+    faltantes = [h for h in COLUMNAS.values() if h not in encabezado_real]
+    if faltantes:
+        print("DEBUG *** estos encabezados esperados NO aparecen tal cual en la hoja:", faltantes)
+    # ----------------------------------------------------------------------
+
+    registros = ws.get_all_records()
+
+    # ---- más diagnóstico: mirar las primeras filas crudas ----
+    for i, r in enumerate(registros[:5]):
+        print(f"DEBUG fila cruda #{i}: ingresos={r.get(COLUMNAS['ingresos'])!r} "
+              f"(tipo {type(r.get(COLUMNAS['ingresos'])).__name__}) "
+              f"marca={r.get(COLUMNAS['marca'])!r} campana={r.get(COLUMNAS['campaignName'])!r}")
+    # ------------------------------------------------------------
 
     filas = []
     omitidas = 0
@@ -153,6 +169,11 @@ def main():
     os.makedirs(os.path.dirname(OUTPUT_PATH) or ".", exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(salida, f, ensure_ascii=False, indent=2)
+
+    campanas_unicas = {(f["marca"], f["campaignName"]) for f in filas}
+    suma_ingresos = sum(f["ingresos"] for f in filas)
+    print(f"DEBUG campañas únicas (marca+nombre) que calcula el script: {len(campanas_unicas)}")
+    print(f"DEBUG suma total de ingresos que calcula el script: {suma_ingresos}")
 
     print(f"OK: {len(filas)} filas escritas en {OUTPUT_PATH} ({omitidas} filas omitidas por falta de marca/fecha).")
 
