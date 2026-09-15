@@ -19,6 +19,7 @@ cuenta de servicio, en el campo "client_email").
 
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone
 
@@ -62,14 +63,26 @@ def cargar_credenciales():
 
 
 def a_numero(valor, tipo=float):
+    """Convierte a número aunque la celda venga formateada como moneda
+    (ej. "$1.234", "CLP 1.234,56") — Sheets entrega el valor ya
+    formateado como texto cuando la celda tiene formato de moneda, no
+    el número "crudo"."""
     if valor is None or valor == "":
         return 0
+    if isinstance(valor, (int, float)):
+        return tipo(valor)
+    texto = re.sub(r"[^0-9,.\-]", "", str(valor))  # saca "$", "CLP", espacios, etc.
+    if not texto:
+        return 0
+    if "," in texto:
+        # coma = separador decimal, punto = separador de miles
+        texto = texto.replace(".", "").replace(",", ".")
+    else:
+        # sin coma: los puntos se asumen separadores de miles (montos en
+        # CLP no llevan decimales)
+        texto = texto.replace(".", "")
     try:
-        # Los valores pueden venir con separador de miles/decimales según
-        # el locale de la hoja; gspread normalmente ya entrega el número
-        # "crudo" para celdas numéricas, pero por si acaso limpiamos.
-        limpio = str(valor).replace(".", "").replace(",", ".") if isinstance(valor, str) and "," in str(valor) else valor
-        return tipo(limpio)
+        return tipo(texto)
     except (ValueError, TypeError):
         return 0
 
