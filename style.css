@@ -326,6 +326,12 @@ table.data th.txt, table.data td.txt {
   text-align: left;
   font-variant-numeric: normal;
 }
+table.data th.sortable {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+table.data th.sortable:hover { color: var(--text-primary); }
 table.data thead th {
   color: var(--text-secondary);
   font-weight: 600;
