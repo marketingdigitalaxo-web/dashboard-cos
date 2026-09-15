@@ -19,7 +19,6 @@ cuenta de servicio, en el campo "client_email").
 
 import json
 import os
-import re
 import sys
 from datetime import datetime, timezone
 
@@ -47,6 +46,13 @@ COLUMNAS = {
     "ingresos": "Total de ingresos",
 }
 
+# Columnas numéricas: se leen SIN formato (value_render_option
+# UNFORMATTED_VALUE), o sea el número real de la celda, tal cual lo usa
+# Sheets internamente — así da lo mismo si la celda está formateada como
+# moneda con "$1.234", "$1,234", "1.234,00", etc. Se evita por completo
+# tener que adivinar qué separador usa cada planilla.
+COLUMNAS_NUMERICAS = {"view", "click", "addToCart", "purchase", "ingresos"}
+
 
 def cargar_credenciales():
     raw = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON")
@@ -63,26 +69,16 @@ def cargar_credenciales():
 
 
 def a_numero(valor, tipo=float):
-    """Convierte a número aunque la celda venga formateada como moneda
-    (ej. "$1.234", "CLP 1.234,56") — Sheets entrega el valor ya
-    formateado como texto cuando la celda tiene formato de moneda, no
-    el número "crudo"."""
+    """Último resorte por si un valor "sin formato" igual llega como
+    texto (celda con apóstrofe/texto forzado, etc). Para columnas
+    numéricas normales esto ni se usa: UNFORMATTED_VALUE ya entrega el
+    número real."""
     if valor is None or valor == "":
         return 0
     if isinstance(valor, (int, float)):
         return tipo(valor)
-    texto = re.sub(r"[^0-9,.\-]", "", str(valor))  # saca "$", "CLP", espacios, etc.
-    if not texto:
-        return 0
-    if "," in texto:
-        # coma = separador decimal, punto = separador de miles
-        texto = texto.replace(".", "").replace(",", ".")
-    else:
-        # sin coma: los puntos se asumen separadores de miles (montos en
-        # CLP no llevan decimales)
-        texto = texto.replace(".", "")
     try:
-        return tipo(texto)
+        return tipo(str(valor).strip())
     except (ValueError, TypeError):
         return 0
 
@@ -103,6 +99,15 @@ def normalizar_fecha(valor):
     return valor
 
 
+def pad(fila, largo):
+    """Sheets recorta las celdas vacías del final de cada fila — se
+    rellenan con '' para que todas las filas tengan el mismo largo que
+    el encabezado y así indexar por columna sea seguro."""
+    if len(fila) >= largo:
+        return fila
+    return fila + [""] * (largo - len(fila))
+
+
 def main():
     spreadsheet_id = os.environ.get("SPREADSHEET_ID")
     if not spreadsheet_id:
@@ -121,42 +126,44 @@ def main():
     except gspread.exceptions.WorksheetNotFound:
         sys.exit(f"No existe una pestaña llamada '{SHEET_NAME}' en la planilla.")
 
-    # ---- DIAGNÓSTICO TEMPORAL (borrar cuando ya cuadren los números) ----
-    encabezado_real = ws.row_values(1)
-    print("DEBUG encabezado real de la hoja:", [repr(h) for h in encabezado_real])
-    print("DEBUG encabezado esperado       :", [repr(h) for h in COLUMNAS.values()])
-    faltantes = [h for h in COLUMNAS.values() if h not in encabezado_real]
+    encabezado = ws.row_values(1)
+    faltantes = [h for h in COLUMNAS.values() if h not in encabezado]
     if faltantes:
-        print("DEBUG *** estos encabezados esperados NO aparecen tal cual en la hoja:", faltantes)
-    # ----------------------------------------------------------------------
+        sys.exit(
+            "La hoja no tiene estas columnas (revisa tildes/mayúsculas/espacios "
+            f"exactos en el encabezado): {faltantes}. Encabezado real: {encabezado}"
+        )
+    idx = {clave: encabezado.index(nombre) for clave, nombre in COLUMNAS.items()}
+    ncols = len(encabezado)
 
-    registros = ws.get_all_records()
-
-    # ---- más diagnóstico: mirar las primeras filas crudas ----
-    for i, r in enumerate(registros[:5]):
-        print(f"DEBUG fila cruda #{i}: ingresos={r.get(COLUMNAS['ingresos'])!r} "
-              f"(tipo {type(r.get(COLUMNAS['ingresos'])).__name__}) "
-              f"marca={r.get(COLUMNAS['marca'])!r} campana={r.get(COLUMNAS['campaignName'])!r}")
-    # ------------------------------------------------------------
+    # grilla "formateada" (como se ve en pantalla) — se usa para texto y fecha
+    grilla_fmt = ws.get_values()
+    # grilla "cruda" (el número real, sin formato de moneda/miles) — para numéricas
+    grilla_raw = ws.get_values(value_render_option="UNFORMATTED_VALUE")
 
     filas = []
     omitidas = 0
-    for r in registros:
-        fecha = normalizar_fecha(r.get(COLUMNAS["fecha"]))
-        marca = str(r.get(COLUMNAS["marca"]) or "").strip()
+    total_filas_datos = max(len(grilla_fmt), len(grilla_raw)) - 1  # -1 por el encabezado
+    for i in range(1, total_filas_datos + 1):
+        f = pad(grilla_fmt[i] if i < len(grilla_fmt) else [], ncols)
+        r = pad(grilla_raw[i] if i < len(grilla_raw) else [], ncols)
+
+        fecha = normalizar_fecha(f[idx["fecha"]])
+        marca = str(f[idx["marca"]] or "").strip()
         if not fecha or not marca:
             omitidas += 1
             continue
+
         filas.append({
             "marca": marca,
             "fecha": fecha,
-            "campaignName": str(r.get(COLUMNAS["campaignName"]) or "").strip(),
-            "campaignId": str(r.get(COLUMNAS["campaignId"]) or "").strip(),
-            "view": int(a_numero(r.get(COLUMNAS["view"]), int)),
-            "click": int(a_numero(r.get(COLUMNAS["click"]), int)),
-            "addToCart": int(a_numero(r.get(COLUMNAS["addToCart"]), int)),
-            "purchase": int(a_numero(r.get(COLUMNAS["purchase"]), int)),
-            "ingresos": a_numero(r.get(COLUMNAS["ingresos"]), float),
+            "campaignName": str(f[idx["campaignName"]] or "").strip(),
+            "campaignId": str(f[idx["campaignId"]] or "").strip(),
+            "view": int(a_numero(r[idx["view"]], int)),
+            "click": int(a_numero(r[idx["click"]], int)),
+            "addToCart": int(a_numero(r[idx["addToCart"]], int)),
+            "purchase": int(a_numero(r[idx["purchase"]], int)),
+            "ingresos": a_numero(r[idx["ingresos"]], float),
         })
 
     filas.sort(key=lambda f: (f["fecha"], f["marca"], f["campaignName"]))
