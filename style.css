@@ -332,6 +332,20 @@ table.data th.sortable {
   white-space: nowrap;
 }
 table.data th.sortable:hover { color: var(--text-primary); }
+table.data td.rank, table.data th.rank {
+  text-align: center;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  width: 1%;
+}
+
+/* "Resumen por campaña" puede tener cientos de filas — se deja un alto
+   fijo (~10 filas) con scroll interno propio y encabezado siempre
+   visible, para que la pestaña "Campañas" no quede kilométrica. */
+#tabla-campanas {
+  max-height: 430px;
+  overflow-y: auto;
+}
 table.data thead th {
   color: var(--text-secondary);
   font-weight: 600;
