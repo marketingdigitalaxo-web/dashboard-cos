@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dashboard Campañas On-Site</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <h1>Campañas on-site — todas las marcas</h1>
+    <span class="actualizado" id="actualizado">Cargando datos…</span>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="general">Resumen general</button>
+    <button role="tab" aria-selected="false" data-tab="campanas">Campañas</button>
+  </nav>
+
+  <section class="filters" aria-label="Filtros">
+    <div class="filter-field">
+      <label for="f-marca">Marca</label>
+      <select id="f-marca">
+        <option value="">Todas</option>
+      </select>
+    </div>
+    <div class="filter-field">
+      <label for="f-start">Desde</label>
+      <input type="date" id="f-start" />
+    </div>
+    <div class="filter-field">
+      <label for="f-end">Hasta</label>
+      <input type="date" id="f-end" />
+    </div>
+    <div class="filter-field">
+      <label for="f-tipo">Tipo de campaña</label>
+      <select id="f-tipo">
+        <option value="">Todos</option>
+      </select>
+    </div>
+    <div class="filter-field compare-toggle">
+      <input type="checkbox" id="f-compare-on" />
+      <label for="f-compare-on">Comparar con otro período</label>
+    </div>
+    <div class="compare-range" id="compare-range" hidden>
+      <div class="filter-field">
+        <label for="f-cmp-start">Desde (comparación)</label>
+        <input type="date" id="f-cmp-start" />
+      </div>
+      <div class="filter-field">
+        <label for="f-cmp-end">Hasta (comparación)</label>
+        <input type="date" id="f-cmp-end" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESUMEN GENERAL ================= -->
+  <section id="tab-general" class="tab-panel">
+
+    <div class="kpi-row" id="kpi-row"></div>
+
+    <div class="card">
+      <div class="card-head">
+        <h2>Evolución en el tiempo</h2>
+        <span class="sub" id="general-chart-range"></span>
+      </div>
+      <div class="chart-row">
+        <div>
+          <div class="card-head"><h2 style="font-size:13px;color:var(--text-secondary)">Ingresos por día</h2></div>
+          <div class="chart-box"><canvas id="chart-ingresos"></canvas></div>
+          <button class="link-btn" data-table-toggle="chart-ingresos">Ver como tabla</button>
+        </div>
+        <div>
+          <div class="card-head"><h2 style="font-size:13px;color:var(--text-secondary)">Eventos por día</h2></div>
+          <div class="chart-box"><canvas id="chart-eventos"></canvas></div>
+          <button class="link-btn" data-table-toggle="chart-eventos">Ver como tabla</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h2>Resumen general por marca</h2>
+      </div>
+      <div class="table-scroll" id="tabla-general"></div>
+    </div>
+
+  </section>
+
+  <!-- ================= CAMPAÑAS ================= -->
+  <section id="tab-campanas" class="tab-panel" hidden>
+
+    <div class="card">
+      <div class="card-head">
+        <h2>Ingresos por día, por tipo de campaña</h2>
+        <span class="sub">top 4 tipos por ingresos + "Otros"</span>
+      </div>
+      <div class="chart-box" style="height:260px"><canvas id="chart-tipos-tiempo"></canvas></div>
+      <button class="link-btn" data-table-toggle="chart-tipos-tiempo">Ver como tabla</button>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>Resumen por campaña</h2></div>
+      <div class="table-scroll" id="tabla-campanas"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>Resumen por tipo de campaña</h2></div>
+      <div class="table-scroll" id="tabla-tipos"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h2>Marca × Tipo de campaña</h2>
+        <span class="sub" id="matrix-sub">ingresos por campaña (promedio por instancia)</span>
+      </div>
+      <div class="table-scroll" id="tabla-matriz"></div>
+    </div>
+
+  </section>
+
+  <footer class="note">
+    Datos desde Google Sheets, actualizados automáticamente por GitHub Actions. Filtro de fechas aplica sobre la columna "Fecha" de cada evento.
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
