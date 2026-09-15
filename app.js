@@ -75,7 +75,8 @@ const state = {
   filters: { start: null, end: null, marca: '', tipo: '' },
   compare: { enabled: false, start: null, end: null },
   charts: {}, // id -> Chart.js instance
-  lastTableData: {}, // id -> {headers, rows} para el toggle "ver como tabla"
+  lastTableData: {}, // id -> {headers, rows, sortValues} para el toggle "ver como tabla"
+  tableSort: {}, // tableId -> {index, dir} — se mantiene entre re-renders (cambios de filtro)
 };
 
 // ---------- Carga de datos ----------
@@ -119,12 +120,14 @@ function aggregateByCampaign(rows) {
   const m = new Map();
   rows.forEach(r => {
     const key = r.marca + '|' + r.campaignName + '|' + r.campaignId;
-    if (!m.has(key)) m.set(key, { marca: r.marca, campaignName: r.campaignName, campaignId: r.campaignId, view: 0, click: 0, addToCart: 0, purchase: 0, ingresos: 0 });
+    if (!m.has(key)) m.set(key, { marca: r.marca, campaignName: r.campaignName, campaignId: r.campaignId, view: 0, click: 0, addToCart: 0, purchase: 0, ingresos: 0, dias: new Set() });
     const g = m.get(key);
     g.view += r.view; g.click += r.click; g.addToCart += r.addToCart; g.purchase += r.purchase; g.ingresos += r.ingresos;
+    g.dias.add(r.fecha);
   });
   return Array.from(m.values()).map(g => ({
     ...g,
+    diasActivo: g.dias.size, // días distintos con datos dentro del período filtrado
     ctr: g.view ? g.click / g.view : 0,
     pctCarrito: g.click ? g.addToCart / g.click : 0,
     pctCompra: g.addToCart ? g.purchase / g.addToCart : 0,
@@ -277,59 +280,110 @@ function renderKpis(rows, rowsCmp) {
 }
 
 // ---------- Render: tablas ----------
-function buildTable(container, { headers, rows, totals, className }) {
-  container.innerHTML = '';
-  const table = document.createElement('table');
-  table.className = 'data' + (className ? ' ' + className : '');
-
-  const thead = document.createElement('thead');
-  const trh = document.createElement('tr');
-  headers.forEach((h, i) => {
-    const th = document.createElement('th');
-    if (i === 0) th.className = 'txt';
-    th.textContent = h;
-    trh.appendChild(th);
-  });
-  thead.appendChild(trh);
-  table.appendChild(thead);
-
-  const tbody = document.createElement('tbody');
-  if (rows.length === 0) {
-    const tr = document.createElement('tr');
-    const td = document.createElement('td');
-    td.colSpan = headers.length;
-    td.className = 'txt';
-    td.textContent = 'Sin datos para este filtro.';
-    tr.appendChild(td);
-    tbody.appendChild(tr);
+// Compara dos valores "crudos" (número o texto) para ordenar. Los valores
+// vacíos/null (ej. "—" cuando no hay período anterior) siempre quedan al
+// final, sin importar la dirección del orden.
+function compareValues(a, b) {
+  const aNull = a === null || a === undefined || a === '';
+  const bNull = b === null || b === undefined || b === '';
+  if (aNull && bNull) return 0;
+  if (aNull) return 1;
+  if (bNull) return -1;
+  if (typeof a === 'number' && typeof b === 'number') {
+    const na = isFinite(a) ? a : (a > 0 ? Number.MAX_VALUE : -Number.MAX_VALUE);
+    const nb = isFinite(b) ? b : (b > 0 ? Number.MAX_VALUE : -Number.MAX_VALUE);
+    return na - nb;
   }
-  rows.forEach(cells => {
-    const tr = document.createElement('tr');
-    cells.forEach((c, i) => {
-      const td = document.createElement('td');
-      if (i === 0) td.className = 'txt';
-      if (c && c.cls) td.className = (td.className ? td.className + ' ' : '') + c.cls;
-      td.textContent = c && typeof c === 'object' ? c.text : c;
-      tr.appendChild(td);
-    });
-    tbody.appendChild(tr);
-  });
-  table.appendChild(tbody);
+  return String(a).localeCompare(String(b), CONFIG.locale, { numeric: true, sensitivity: 'base' });
+}
 
-  if (totals) {
-    const tfoot = document.createElement('tfoot');
-    const tr = document.createElement('tr');
-    totals.forEach((c, i) => {
-      const td = document.createElement('td');
-      if (i === 0) td.className = 'txt';
-      td.textContent = c;
-      tr.appendChild(td);
+// sortValues: arreglo paralelo a `rows`, mismo largo por fila, con el valor
+// "crudo" (número o texto) de cada columna — se usa solo para ordenar, la
+// celda que se ve en pantalla sigue siendo la de `rows` (ya formateada).
+// tableId: string estable para recordar el orden elegido entre re-renders
+// (cambios de filtro). Si se omiten sortValues/tableId, la tabla no es
+// clickeable para ordenar (ej. cuando no hay valores crudos disponibles).
+function buildTable(container, { headers, rows, totals, className, sortValues, tableId }) {
+  const sortable = !!(sortValues && tableId);
+
+  function render() {
+    container.innerHTML = '';
+    const table = document.createElement('table');
+    table.className = 'data' + (className ? ' ' + className : '');
+
+    const sortState = sortable ? state.tableSort[tableId] : null;
+    let order = rows.map((_, i) => i);
+    if (sortState) {
+      order.sort((ia, ib) => {
+        const cmp = compareValues(sortValues[ia][sortState.index], sortValues[ib][sortState.index]);
+        return sortState.dir === 'asc' ? cmp : -cmp;
+      });
+    }
+
+    const thead = document.createElement('thead');
+    const trh = document.createElement('tr');
+    headers.forEach((h, i) => {
+      const th = document.createElement('th');
+      if (i === 0) th.className = 'txt';
+      let label = h;
+      if (sortable) {
+        th.classList.add('sortable');
+        if (sortState && sortState.index === i) label += sortState.dir === 'asc' ? ' ▲' : ' ▼';
+        th.addEventListener('click', () => {
+          const cur = state.tableSort[tableId];
+          state.tableSort[tableId] = (cur && cur.index === i)
+            ? { index: i, dir: cur.dir === 'desc' ? 'asc' : 'desc' }
+            : { index: i, dir: 'desc' };
+          render();
+        });
+      }
+      th.textContent = label;
+      trh.appendChild(th);
     });
-    tfoot.appendChild(tr);
-    table.appendChild(tfoot);
+    thead.appendChild(trh);
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+    if (rows.length === 0) {
+      const tr = document.createElement('tr');
+      const td = document.createElement('td');
+      td.colSpan = headers.length;
+      td.className = 'txt';
+      td.textContent = 'Sin datos para este filtro.';
+      tr.appendChild(td);
+      tbody.appendChild(tr);
+    }
+    order.forEach(rowIdx => {
+      const cells = rows[rowIdx];
+      const tr = document.createElement('tr');
+      cells.forEach((c, i) => {
+        const td = document.createElement('td');
+        if (i === 0) td.className = 'txt';
+        if (c && c.cls) td.className = (td.className ? td.className + ' ' : '') + c.cls;
+        td.textContent = c && typeof c === 'object' ? c.text : c;
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+
+    if (totals) {
+      const tfoot = document.createElement('tfoot');
+      const tr = document.createElement('tr');
+      totals.forEach((c, i) => {
+        const td = document.createElement('td');
+        if (i === 0) td.className = 'txt';
+        td.textContent = c;
+        tr.appendChild(td);
+      });
+      tfoot.appendChild(tr);
+      table.appendChild(tfoot);
+    }
+
+    container.appendChild(table);
   }
 
-  container.appendChild(table);
+  render();
 }
 
 function renderTablaGeneral(rows, rowsCmp) {
@@ -341,12 +395,17 @@ function renderTablaGeneral(rows, rowsCmp) {
     ? ['Marca', 'Q campañas', 'Q camp. (ant.)', 'Ingresos', 'Ingresos (ant.)', 'Δ Ingresos', 'Ingresos/campaña', 'Ingresos/camp. (ant.)']
     : headers;
 
-  const rowsOut = data.map(d => {
+  const rowsOut = [];
+  const sortValues = [];
+  data.forEach(d => {
     if (!cmpData) {
-      return [d.marca, fmtInt.format(d.qCampanas), fmtMoney.format(d.ingresos), fmtMoney.format(d.ingresosPorCampana)];
+      rowsOut.push([d.marca, fmtInt.format(d.qCampanas), fmtMoney.format(d.ingresos), fmtMoney.format(d.ingresosPorCampana)]);
+      sortValues.push([d.marca, d.qCampanas, d.ingresos, d.ingresosPorCampana]);
+      return;
     }
     const c = cmpData.get(d.marca);
-    return [
+    const dp = c ? deltaPct(d.ingresos, c.ingresos) : null;
+    rowsOut.push([
       d.marca,
       fmtInt.format(d.qCampanas),
       { text: c ? fmtInt.format(c.qCampanas) : '—', cls: 'prev' },
@@ -355,7 +414,12 @@ function renderTablaGeneral(rows, rowsCmp) {
       deltaCell(d.ingresos, !!c, c ? c.ingresos : 0),
       fmtMoney.format(d.ingresosPorCampana),
       { text: c ? fmtMoney.format(c.ingresosPorCampana) : '—', cls: 'prev' },
-    ];
+    ]);
+    sortValues.push([
+      d.marca, d.qCampanas, c ? c.qCampanas : null, d.ingresos, c ? c.ingresos : null,
+      dp,
+      d.ingresosPorCampana, c ? c.ingresosPorCampana : null,
+    ]);
   });
 
   const totalIngresos = data.reduce((s, d) => s + d.ingresos, 0);
@@ -364,33 +428,45 @@ function renderTablaGeneral(rows, rowsCmp) {
     ? ['Total', fmtInt.format(totalCampanas), '', fmtMoney.format(totalIngresos), '', '', '', '']
     : ['Total', fmtInt.format(totalCampanas), fmtMoney.format(totalIngresos), ''];
 
-  buildTable(document.getElementById('tabla-general'), { headers: finalHeaders, rows: rowsOut, totals });
+  buildTable(document.getElementById('tabla-general'), { headers: finalHeaders, rows: rowsOut, totals, sortValues, tableId: 'tabla-general' });
 }
 
 function renderTablaCampanas(rows, rowsCmp) {
   const data = aggregateByCampaign(rows);
   const cmpData = rowsCmp ? new Map(aggregateByCampaign(rowsCmp).map(d => [d.marca + '|' + d.campaignName + '|' + d.campaignId, d])) : null;
 
-  const base = ['Marca', 'Campaña', 'View', 'Click', 'CTR', 'Add to cart', '% Carrito', 'Purchase', '% Compra', 'Conv. total', 'Ingresos'];
+  const base = ['Marca', 'Campaña', 'Días activo', 'View', 'Click', 'CTR', 'Add to cart', '% Carrito', 'Purchase', '% Compra', 'Conv. total', 'Ingresos'];
   const headers = cmpData ? base.concat(['Ingresos (ant.)', 'Δ Ingresos']) : base;
 
-  const rowsOut = data.map(d => {
+  const rowsOut = [];
+  const sortValues = [];
+  data.forEach(d => {
     const row = [
-      d.marca, d.campaignName,
+      d.marca, d.campaignName, fmtInt.format(d.diasActivo),
       fmtInt.format(d.view), fmtInt.format(d.click), fmtPct(d.ctr),
       fmtInt.format(d.addToCart), fmtPct(d.pctCarrito),
       fmtInt.format(d.purchase), fmtPct(d.pctCompra), fmtPct(d.conversionTotal),
       fmtMoney.format(d.ingresos),
     ];
+    const sv = [
+      d.marca, d.campaignName, d.diasActivo,
+      d.view, d.click, d.ctr,
+      d.addToCart, d.pctCarrito,
+      d.purchase, d.pctCompra, d.conversionTotal,
+      d.ingresos,
+    ];
     if (cmpData) {
       const c = cmpData.get(d.marca + '|' + d.campaignName + '|' + d.campaignId);
       row.push({ text: c ? fmtMoney.format(c.ingresos) : '—', cls: 'prev' });
       row.push(deltaCell(d.ingresos, !!c, c ? c.ingresos : 0));
+      sv.push(c ? c.ingresos : null);
+      sv.push(c ? deltaPct(d.ingresos, c.ingresos) : null);
     }
-    return row;
+    rowsOut.push(row);
+    sortValues.push(sv);
   });
 
-  buildTable(document.getElementById('tabla-campanas'), { headers, rows: rowsOut });
+  buildTable(document.getElementById('tabla-campanas'), { headers, rows: rowsOut, sortValues, tableId: 'tabla-campanas' });
 }
 
 function renderTablaTipos(rows, rowsCmp) {
@@ -400,17 +476,23 @@ function renderTablaTipos(rows, rowsCmp) {
   const base = ['Tipo de campaña', 'Q campañas', 'Ingresos', 'Ingresos/campaña'];
   const headers = cmpData ? base.concat(['Ingresos (ant.)', 'Δ Ingresos']) : base;
 
-  const rowsOut = data.map(d => {
+  const rowsOut = [];
+  const sortValues = [];
+  data.forEach(d => {
     const row = [d.campaignId, fmtInt.format(d.qCampanas), fmtMoney.format(d.ingresos), fmtMoney.format(d.ingresosPorCampana)];
+    const sv = [d.campaignId, d.qCampanas, d.ingresos, d.ingresosPorCampana];
     if (cmpData) {
       const c = cmpData.get(d.campaignId);
       row.push({ text: c ? fmtMoney.format(c.ingresos) : '—', cls: 'prev' });
       row.push(deltaCell(d.ingresos, !!c, c ? c.ingresos : 0));
+      sv.push(c ? c.ingresos : null);
+      sv.push(c ? deltaPct(d.ingresos, c.ingresos) : null);
     }
-    return row;
+    rowsOut.push(row);
+    sortValues.push(sv);
   });
 
-  buildTable(document.getElementById('tabla-tipos'), { headers, rows: rowsOut });
+  buildTable(document.getElementById('tabla-tipos'), { headers, rows: rowsOut, sortValues, tableId: 'tabla-tipos' });
 }
 
 function mixColor(hexA, hexB, t) {
@@ -507,7 +589,7 @@ function renderChartIngresos(rows, rowsCmp, start, end) {
   destroyChart('ingresos');
   const ctx = document.getElementById('chart-ingresos').getContext('2d');
 
-  let labels, datasets, tableRows;
+  let labels, datasets, tableRows, sortValues;
   if (rowsCmp) {
     const cur = dailySeries(rows, start, end);
     const cmpRange = defaultComparePeriod(start, end); // solo para largo; el período real ya viene filtrado
@@ -519,12 +601,17 @@ function renderChartIngresos(rows, rowsCmp, start, end) {
       { label: 'Ingresos (anterior)', data: cmp.slice(0, n).map(d => d.ingresos), borderColor: pal.series[0], borderDash: [6, 4], backgroundColor: pal.series[0] },
     ];
     tableRows = labels.map((l, i) => [l, fmtMoney.format(datasets[0].data[i]), fmtMoney.format(datasets[1].data[i])]);
-    state.lastTableData['chart-ingresos'] = { headers: ['Período', 'Actual', 'Anterior'], rows: tableRows };
+    sortValues = labels.map((l, i) => [l, datasets[0].data[i], datasets[1].data[i]]);
+    state.lastTableData['chart-ingresos'] = { headers: ['Período', 'Actual', 'Anterior'], rows: tableRows, sortValues };
   } else {
     const serie = dailySeries(rows, start, end);
     labels = serie.map(d => d.fecha);
     datasets = [{ label: 'Ingresos', data: serie.map(d => d.ingresos), borderColor: pal.series[0], backgroundColor: pal.series[0] }];
-    state.lastTableData['chart-ingresos'] = { headers: ['Fecha', 'Ingresos'], rows: serie.map(d => [d.fecha, fmtMoney.format(d.ingresos)]) };
+    state.lastTableData['chart-ingresos'] = {
+      headers: ['Fecha', 'Ingresos'],
+      rows: serie.map(d => [d.fecha, fmtMoney.format(d.ingresos)]),
+      sortValues: serie.map(d => [d.fecha, d.ingresos]),
+    };
   }
 
   const opts = baseLineOptions(pal);
@@ -549,10 +636,23 @@ function renderChartEventos(rows, start, end) {
   state.lastTableData['chart-eventos'] = {
     headers: ['Fecha', ...specs.map(s => s.label)],
     rows: serie.map((d, i) => [d.fecha, ...specs.map(s => fmtInt.format(d[s.key]))]),
+    sortValues: serie.map(d => [d.fecha, ...specs.map(s => d[s.key])]),
   };
 
   const opts = baseLineOptions(pal);
   opts.plugins.tooltip.callbacks = { label: (c) => c.dataset.label + ': ' + fmtInt.format(c.parsed.y) };
+  // Clic en un ítem de la leyenda prende/apaga ese evento — comportamiento
+  // nativo de Chart.js (legend.onClick por defecto), lo dejamos explícito
+  // y con cursor de mano para que se note que es clickeable. El eje Y se
+  // reajusta solo a lo que quede visible.
+  opts.plugins.legend.onClick = (evt, legendItem, legend) => {
+    const chart = legend.chart;
+    const idx = legendItem.datasetIndex;
+    chart.setDatasetVisibility(idx, !chart.isDatasetVisible(idx));
+    chart.update();
+  };
+  opts.plugins.legend.onHover = (evt) => { evt.native.target.style.cursor = 'pointer'; };
+  opts.plugins.legend.onLeave = (evt) => { evt.native.target.style.cursor = 'default'; };
   state.charts.eventos = new Chart(ctx, { type: 'line', data: { labels, datasets }, options: opts });
 }
 
@@ -567,6 +667,7 @@ function renderChartTiposTiempo(rows) {
   state.lastTableData['chart-tipos-tiempo'] = {
     headers: ['Fecha', ...series.map(s => s.label)],
     rows: fechas.map((f, i) => [f, ...series.map(s => fmtMoney.format(s.data[i]))]),
+    sortValues: fechas.map((f, i) => [f, ...series.map(s => s.data[i])]),
   };
 
   const opts = baseLineOptions(pal);
@@ -592,7 +693,7 @@ function wireTableToggles() {
       if (!data) return;
       const wrap = document.createElement('div');
       wrap.className = 'inline-table-view table-scroll';
-      buildTable(wrap, { headers: data.headers, rows: data.rows });
+      buildTable(wrap, { headers: data.headers, rows: data.rows, sortValues: data.sortValues, tableId: chartId + '-inline' });
       canvas.parentElement.hidden = true;
       canvas.parentElement.after(wrap);
       btn.textContent = 'Ver como gráfico';
