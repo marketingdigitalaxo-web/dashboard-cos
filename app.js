@@ -16,6 +16,19 @@ const fmtInt = new Intl.NumberFormat(CONFIG.locale, { maximumFractionDigits: 0 }
 const fmtMoney = new Intl.NumberFormat(CONFIG.locale, { style: 'currency', currency: CONFIG.currency, maximumFractionDigits: 0 });
 const fmtPct = (x) => (isFinite(x) ? (x * 100).toFixed(1) + '%' : '—');
 
+// Nombres amigables para "Tipo de campaña" (emarsys_campaign_id). Un tipo
+// que no esté en este mapa se muestra tal cual viene de la hoja, para que
+// nunca "desaparezca" un tipo nuevo que todavía no le pusimos alias.
+const TIPO_LABELS = {
+  'pers-overlay-pdp': 'Pop-up',
+  'pers-pop-up-ext': 'Sticky',
+  'pers-text-pdp': 'Texto PDP',
+  'pers-banner-plp': 'Banner PLP',
+  'pers-sticky-multiple': 'Sticky Multiple',
+  'pers-banner-menu': 'Banner Menu',
+};
+function tipoLabel(id) { return TIPO_LABELS[id] || id; }
+
 // ---------- Utilidades de fecha (siempre en horario LOCAL, nunca UTC) ----------
 function toISO(d) {
   const y = d.getFullYear(), m = String(d.getMonth() + 1).padStart(2, '0'), day = String(d.getDate()).padStart(2, '0');
@@ -194,7 +207,7 @@ function aggregateTipoPorDia(rows) {
   const fechas = Array.from(perDateTipo.keys()).sort();
   const labels = top.concat(hayOtros ? ['Otros'] : []);
   const series = labels.map(label => ({
-    label,
+    label: label === 'Otros' ? 'Otros' : tipoLabel(label),
     data: fechas.map(f => perDateTipo.get(f).get(label) || 0),
   }));
   return { fechas, series };
@@ -303,7 +316,7 @@ function compareValues(a, b) {
 // tableId: string estable para recordar el orden elegido entre re-renders
 // (cambios de filtro). Si se omiten sortValues/tableId, la tabla no es
 // clickeable para ordenar (ej. cuando no hay valores crudos disponibles).
-function buildTable(container, { headers, rows, totals, className, sortValues, tableId }) {
+function buildTable(container, { headers, rows, totals, className, sortValues, tableId, showRank }) {
   const sortable = !!(sortValues && tableId);
 
   function render() {
@@ -322,6 +335,12 @@ function buildTable(container, { headers, rows, totals, className, sortValues, t
 
     const thead = document.createElement('thead');
     const trh = document.createElement('tr');
+    if (showRank) {
+      const thRank = document.createElement('th');
+      thRank.className = 'rank';
+      thRank.textContent = '#';
+      trh.appendChild(thRank);
+    }
     headers.forEach((h, i) => {
       const th = document.createElement('th');
       if (i === 0) th.className = 'txt';
@@ -347,15 +366,21 @@ function buildTable(container, { headers, rows, totals, className, sortValues, t
     if (rows.length === 0) {
       const tr = document.createElement('tr');
       const td = document.createElement('td');
-      td.colSpan = headers.length;
+      td.colSpan = headers.length + (showRank ? 1 : 0);
       td.className = 'txt';
       td.textContent = 'Sin datos para este filtro.';
       tr.appendChild(td);
       tbody.appendChild(tr);
     }
-    order.forEach(rowIdx => {
+    order.forEach((rowIdx, pos) => {
       const cells = rows[rowIdx];
       const tr = document.createElement('tr');
+      if (showRank) {
+        const tdRank = document.createElement('td');
+        tdRank.className = 'rank';
+        tdRank.textContent = String(pos + 1);
+        tr.appendChild(tdRank);
+      }
       cells.forEach((c, i) => {
         const td = document.createElement('td');
         if (i === 0) td.className = 'txt';
@@ -370,6 +395,7 @@ function buildTable(container, { headers, rows, totals, className, sortValues, t
     if (totals) {
       const tfoot = document.createElement('tfoot');
       const tr = document.createElement('tr');
+      if (showRank) { const td = document.createElement('td'); td.className = 'rank'; tr.appendChild(td); }
       totals.forEach((c, i) => {
         const td = document.createElement('td');
         if (i === 0) td.className = 'txt';
@@ -428,7 +454,7 @@ function renderTablaGeneral(rows, rowsCmp) {
     ? ['Total', fmtInt.format(totalCampanas), '', fmtMoney.format(totalIngresos), '', '', '', '']
     : ['Total', fmtInt.format(totalCampanas), fmtMoney.format(totalIngresos), ''];
 
-  buildTable(document.getElementById('tabla-general'), { headers: finalHeaders, rows: rowsOut, totals, sortValues, tableId: 'tabla-general' });
+  buildTable(document.getElementById('tabla-general'), { headers: finalHeaders, rows: rowsOut, totals, sortValues, tableId: 'tabla-general', showRank: true });
 }
 
 function renderTablaCampanas(rows, rowsCmp) {
@@ -466,7 +492,7 @@ function renderTablaCampanas(rows, rowsCmp) {
     sortValues.push(sv);
   });
 
-  buildTable(document.getElementById('tabla-campanas'), { headers, rows: rowsOut, sortValues, tableId: 'tabla-campanas' });
+  buildTable(document.getElementById('tabla-campanas'), { headers, rows: rowsOut, sortValues, tableId: 'tabla-campanas', showRank: true });
 }
 
 function renderTablaTipos(rows, rowsCmp) {
@@ -479,8 +505,9 @@ function renderTablaTipos(rows, rowsCmp) {
   const rowsOut = [];
   const sortValues = [];
   data.forEach(d => {
-    const row = [d.campaignId, fmtInt.format(d.qCampanas), fmtMoney.format(d.ingresos), fmtMoney.format(d.ingresosPorCampana)];
-    const sv = [d.campaignId, d.qCampanas, d.ingresos, d.ingresosPorCampana];
+    const label = tipoLabel(d.campaignId);
+    const row = [label, fmtInt.format(d.qCampanas), fmtMoney.format(d.ingresos), fmtMoney.format(d.ingresosPorCampana)];
+    const sv = [label, d.qCampanas, d.ingresos, d.ingresosPorCampana];
     if (cmpData) {
       const c = cmpData.get(d.campaignId);
       row.push({ text: c ? fmtMoney.format(c.ingresos) : '—', cls: 'prev' });
@@ -492,7 +519,7 @@ function renderTablaTipos(rows, rowsCmp) {
     sortValues.push(sv);
   });
 
-  buildTable(document.getElementById('tabla-tipos'), { headers, rows: rowsOut, sortValues, tableId: 'tabla-tipos' });
+  buildTable(document.getElementById('tabla-tipos'), { headers, rows: rowsOut, sortValues, tableId: 'tabla-tipos', showRank: true });
 }
 
 function mixColor(hexA, hexB, t) {
@@ -520,7 +547,7 @@ function renderMatriz(rows) {
   const trh = document.createElement('tr');
   const thCorner = document.createElement('th'); thCorner.className = 'txt'; thCorner.textContent = 'Marca \\ Tipo';
   trh.appendChild(thCorner);
-  mx.tipos.forEach(t => { const th = document.createElement('th'); th.textContent = t; trh.appendChild(th); });
+  mx.tipos.forEach(t => { const th = document.createElement('th'); th.textContent = tipoLabel(t); trh.appendChild(th); });
   thead.appendChild(trh);
   table.appendChild(thead);
 
@@ -543,7 +570,7 @@ function renderMatriz(rows) {
         td.style.backgroundColor = mixColor(pal.seq100, pal.seq700, norm);
         td.style.color = norm > 0.55 ? '#fff' : '#0b0b0b';
         td.textContent = fmtMoney.format(Math.round(c.ingresosPorCampana));
-        td.title = `${m} × ${t}: ${c.qCampanas} campaña(s), ${fmtMoney.format(c.ingresos)} en total`;
+        td.title = `${m} × ${tipoLabel(t)}: ${c.qCampanas} campaña(s), ${fmtMoney.format(c.ingresos)} en total`;
       } else {
         td.textContent = '—';
       }
@@ -784,7 +811,7 @@ function populateSelectOptions() {
   });
   const tipoSel = document.getElementById('f-tipo');
   state.tipos.forEach(t => {
-    const opt = document.createElement('option'); opt.value = t; opt.textContent = t;
+    const opt = document.createElement('option'); opt.value = t; opt.textContent = tipoLabel(t);
     tipoSel.appendChild(opt);
   });
 }
