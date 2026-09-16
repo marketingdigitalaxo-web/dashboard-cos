@@ -139,6 +139,84 @@ body {
   padding: 20px 16px 64px;
 }
 
+/* ---------- "Login" cosmético ----------
+   Gate puramente visual: el dashboard (.wrap) queda oculto hasta que
+   <body> tenga la clase "authed" (la agrega app.js al validar el mail
+   contra el mapa USERS, o al encontrar una sesión guardada en
+   localStorage). No es seguridad real — ver nota en app.js. */
+.wrap { visibility: hidden; }
+body.authed .wrap { visibility: visible; }
+body.authed #login-overlay { display: none; }
+
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--surface-1-strong);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: var(--glass-shadow);
+  padding: 30px 26px;
+  text-align: center;
+}
+.login-card h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  color: var(--text-primary);
+}
+.login-sub {
+  margin: 0 0 18px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#login-email {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-primary);
+}
+#login-email::placeholder { color: var(--text-muted); }
+#login-email:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+#login-form button {
+  font: inherit;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: background .12s ease;
+}
+#login-form button:hover { background: var(--accent-strong); }
+.login-error {
+  margin: 12px 0 0;
+  font-size: 12.5px;
+  color: var(--status-critical);
+}
+.login-error[hidden] { display: none; }
+
 /* ---------- Encabezado ---------- */
 header.top {
   display: flex;
@@ -153,10 +231,16 @@ header.top h1 {
   margin: 0;
   color: var(--text-primary);
 }
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .actualizado {
   color: var(--text-muted);
   font-size: 12px;
 }
+#logout-link { font-size: 12px; }
 
 /* ---------- Navegación (índice) ---------- */
 nav.tabs {
@@ -328,7 +412,7 @@ nav.tabs button[aria-selected="true"] {
 .link-btn {
   background: none;
   border: none;
-  color: #975034;
+  color: var(--accent);
   font: inherit;
   font-size: 12px;
   cursor: pointer;
@@ -408,7 +492,7 @@ table.data tfoot td {
 /* ---------- Heatmap (Marca x Tipo) ---------- */
 table.heatmap td.cell {
   text-align: center;
-  color: #eaeaea !important;
+  color: #fff;
   font-variant-numeric: tabular-nums;
   min-width: 90px;
   border-radius: 6px;
