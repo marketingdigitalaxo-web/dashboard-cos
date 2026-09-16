@@ -8,11 +8,29 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 </head>
 <body>
+
+<!-- "Login" cosmético: solo personaliza el saludo, no restringe datos de
+     verdad (ver nota en app.js, junto al mapa USERS). -->
+<div id="login-overlay" class="login-overlay">
+  <div class="login-card">
+    <h2>¿Quién anda ahí?</h2>
+    <p class="login-sub">Ingresa tu mail para entrar al dashboard.</p>
+    <form id="login-form" autocomplete="off">
+      <input type="email" id="login-email" placeholder="tu-mail@empresa.com" required />
+      <button type="submit">Entrar</button>
+    </form>
+    <p class="login-error" id="login-error" hidden>Mail no encontrado.</p>
+  </div>
+</div>
+
 <div class="wrap">
 
   <header class="top">
-    <h1>Campañas on-site — todas las marcas</h1>
-    <span class="actualizado" id="actualizado">Cargando datos…</span>
+    <h1 id="titulo-principal">Campañas on-site — todas las marcas</h1>
+    <div class="top-right">
+      <span class="actualizado" id="actualizado">Cargando datos…</span>
+      <button type="button" id="logout-link" class="link-btn" hidden>Cambiar de usuario</button>
+    </div>
   </header>
 
   <nav class="tabs" role="tablist">
