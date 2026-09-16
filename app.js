@@ -45,6 +45,17 @@ const USERS = {
    'nvalenzuelah@grupoaxo.com': 'Nati',
    'ccox@grupoaxo.com': 'Cata',
    'ilopez@grupoaxo.com': 'Nacha',
+   'fcarrasco@grupoaxo.com': 'Fran',
+   'jossandon@grupoaxo.com': 'Joaco',
+   'tvaldesk@grupoaxo.com': 'Tom',
+   'drodriguez@grupoaxo.com': 'Dani',
+   'rmalpica@grupoaxo.com': 'Rafa',
+   'iravanal@grupoaxo.com': 'Isi',
+   'jcampos@grupoaxo.com': 'Jose',
+   'icruz@grupoaxo.com': 'Isi',
+   'ajunemann@grupoaxo.com': 'Anto',
+   'jpolanco@grupoaxo.com': 'Jose',
+   'asalgadob@grupoaxo.com': 'Anto',
 };
 const AUTH_STORAGE_KEY = 'dashboard_auth_v1';
 const TITULO_DEFAULT = 'Campañas on-site — todas las marcas';
