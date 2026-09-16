@@ -39,7 +39,12 @@ function tipoLabel(id) { return TIPO_LABELS[id] || id; }
 // Agrega o quita pares "mail": "Nombre" acá para el equipo. El mail se
 // compara sin importar mayúsculas/espacios.
 const USERS = {
-  'ejemplo@marketingdigitalaxo.cl': 'Nombre Ejemplo',
+  'btorres@grupoaxo.com': 'Benja',
+   'pemmer@grupoaxo.com': 'Poli',
+   'caravena@grupoaxo.com': 'Cami',
+   'nvalenzuelah@grupoaxo.com': 'Nati',
+   'ccox@grupoaxo.com': 'Cata',
+   'ilopez@grupoaxo.com': 'Nacha',
 };
 const AUTH_STORAGE_KEY = 'dashboard_auth_v1';
 const TITULO_DEFAULT = 'Campañas on-site — todas las marcas';
