@@ -492,7 +492,7 @@ table.data tfoot td {
 /* ---------- Heatmap (Marca x Tipo) ---------- */
 table.heatmap td.cell {
   text-align: center;
-  color: #fff;
+  color: #eee !important;
   font-variant-numeric: tabular-nums;
   min-width: 90px;
   border-radius: 6px;
