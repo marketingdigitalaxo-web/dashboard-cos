@@ -29,6 +29,88 @@ const TIPO_LABELS = {
 };
 function tipoLabel(id) { return TIPO_LABELS[id] || id; }
 
+// ---------- "Login" cosmético ----------
+// Esto NO es seguridad real: este archivo (app.js) es público, cualquiera
+// puede abrir las devtools y ver el mapa de mails/nombres de abajo, o
+// saltarse el overlay a mano. Solo sirve para personalizar el saludo del
+// header — no reemplaza ningún control de acceso de verdad a los datos
+// (que igual son públicos para quien tenga el link, ver README).
+//
+// Agrega o quita pares "mail": "Nombre" acá para el equipo. El mail se
+// compara sin importar mayúsculas/espacios.
+const USERS = {
+  'ejemplo@marketingdigitalaxo.cl': 'Nombre Ejemplo',
+};
+const AUTH_STORAGE_KEY = 'dashboard_auth_v1';
+const TITULO_DEFAULT = 'Campañas on-site — todas las marcas';
+
+function normalizeEmail(v) {
+  return (v || '').trim().toLowerCase();
+}
+function findUserName(email) {
+  const key = normalizeEmail(email);
+  if (!key) return null;
+  for (const mail in USERS) {
+    if (normalizeEmail(mail) === key) return USERS[mail];
+  }
+  return null;
+}
+function showApp(name) {
+  document.body.classList.add('authed');
+  const h1 = document.getElementById('titulo-principal');
+  if (h1) h1.textContent = `Bienvenido de vuelta, ${name}, al dashboard Campañas On-site`;
+  const logoutBtn = document.getElementById('logout-link');
+  if (logoutBtn) logoutBtn.hidden = false;
+}
+function hideApp() {
+  document.body.classList.remove('authed');
+  const h1 = document.getElementById('titulo-principal');
+  if (h1) h1.textContent = TITULO_DEFAULT;
+  const logoutBtn = document.getElementById('logout-link');
+  if (logoutBtn) logoutBtn.hidden = true;
+}
+function setupAuth() {
+  const form = document.getElementById('login-form');
+  const input = document.getElementById('login-email');
+  const errorEl = document.getElementById('login-error');
+  const logoutBtn = document.getElementById('logout-link');
+
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem(AUTH_STORAGE_KEY) || 'null'); } catch (e) { saved = null; }
+  if (saved && saved.email) {
+    const name = findUserName(saved.email);
+    if (name) showApp(name);
+    else { try { localStorage.removeItem(AUTH_STORAGE_KEY); } catch (e) {} }
+  }
+
+  if (form) {
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      const name = findUserName(input.value);
+      if (!name) {
+        errorEl.hidden = false;
+        errorEl.textContent = 'Mail no encontrado.';
+        return;
+      }
+      errorEl.hidden = true;
+      try {
+        localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify({ email: normalizeEmail(input.value) }));
+      } catch (e) {}
+      showApp(name);
+    });
+  }
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', () => {
+      try { localStorage.removeItem(AUTH_STORAGE_KEY); } catch (e) {}
+      hideApp();
+      if (input) input.value = '';
+      if (errorEl) errorEl.hidden = true;
+      if (input) input.focus();
+    });
+  }
+}
+
 // ---------- Utilidades de fecha (siempre en horario LOCAL, nunca UTC) ----------
 function toISO(d) {
   const y = d.getFullYear(), m = String(d.getMonth() + 1).padStart(2, '0'), day = String(d.getDate()).padStart(2, '0');
@@ -837,4 +919,7 @@ async function init() {
   renderAll();
 }
 
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', () => {
+  setupAuth();
+  init();
+});
