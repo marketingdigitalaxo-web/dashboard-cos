@@ -63,7 +63,7 @@ function findUserName(email) {
 function showApp(name) {
   document.body.classList.add('authed');
   const h1 = document.getElementById('titulo-principal');
-  if (h1) h1.textContent = `Bienvenido de vuelta, ${name}, al dashboard Campañas On-site`;
+  if (h1) h1.textContent = `Bienvenida ${name}, al dashboard Campañas On-site`;
   const logoutBtn = document.getElementById('logout-link');
   if (logoutBtn) logoutBtn.hidden = false;
 }
