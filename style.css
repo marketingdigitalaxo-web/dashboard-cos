@@ -328,7 +328,7 @@ nav.tabs button[aria-selected="true"] {
 .link-btn {
   background: none;
   border: none;
-  color: var(--accent);
+  color: #975034;
   font: inherit;
   font-size: 12px;
   cursor: pointer;
@@ -408,7 +408,7 @@ table.data tfoot td {
 /* ---------- Heatmap (Marca x Tipo) ---------- */
 table.heatmap td.cell {
   text-align: center;
-  color: #fff;
+  color: #eaeaea !important;
   font-variant-numeric: tabular-nums;
   min-width: 90px;
   border-radius: 6px;
