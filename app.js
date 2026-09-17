@@ -190,6 +190,7 @@ const state = {
   charts: {}, // id -> Chart.js instance
   lastTableData: {}, // id -> {headers, rows, sortValues} para el toggle "ver como tabla"
   tableSort: {}, // tableId -> {index, dir} — se mantiene entre re-renders (cambios de filtro)
+  bestCampaignSort: 'ingresos', // criterio actual de la tarjeta "Mejor campaña del período"
 };
 
 // Filtros de Marca / Tipo de campaña: dropdown de selección múltiple con
@@ -638,6 +639,134 @@ function renderTablaGeneral(rows, rowsCmp) {
   buildTable(document.getElementById('tabla-general'), { headers: finalHeaders, rows: rowsOut, totals, sortValues, tableId: 'tabla-general', showRank: true });
 }
 
+// Ícono de estrella (SVG inline, hereda color por CSS) para la tarjeta de
+// "Mejor campaña" — evita depender de una librería de íconos externa.
+const ICON_STAR = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7-5.4-4.7 7.1-.7z"/></svg>';
+
+// Criterios disponibles para "Mejor campaña del período" — el orden acá
+// define tanto el orden de las opciones del dropdown como el de las
+// tarjetas de estadística debajo del nombre de la campaña.
+const BEST_CAMPAIGN_METRICS = {
+  ingresos: { label: 'Ingresos', get: (d) => d.ingresos, fmt: (d) => fmtMoney.format(d.ingresos) },
+  ctr: { label: 'CTR', get: (d) => d.ctr, fmt: (d) => fmtPct(d.ctr) },
+  conversionTotal: { label: 'Conversión total', get: (d) => d.conversionTotal, fmt: (d) => fmtPct(d.conversionTotal) },
+  view: { label: 'Views', get: (d) => d.view, fmt: (d) => fmtInt.format(d.view) },
+};
+
+// ---------- Render: "Mejor campaña del período" ----------
+// La "mejor" campaña es la de mayor valor según el criterio elegido en el
+// dropdown (state.bestCampaignSort, por defecto "ingresos"). Se recalcula
+// cada vez que cambian los filtros o el criterio.
+function renderBestCampaign(rows) {
+  const container = document.getElementById('best-campaign-card');
+  if (!container) return;
+  const data = aggregateByCampaign(rows);
+  const metricKey = BEST_CAMPAIGN_METRICS[state.bestCampaignSort] ? state.bestCampaignSort : 'ingresos';
+
+  container.innerHTML = '';
+  const head = document.createElement('div');
+  head.className = 'card-head';
+  head.innerHTML = `<h2>${ICON_STAR} Mejor campaña del período</h2>`;
+  head.appendChild(buildBestCampaignSortDropdown(metricKey));
+  container.appendChild(head);
+
+  if (data.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'empty-state';
+    empty.textContent = 'Sin datos para este filtro.';
+    container.appendChild(empty);
+    return;
+  }
+
+  const metric = BEST_CAMPAIGN_METRICS[metricKey];
+  const best = data.reduce((top, d) => (top === null || metric.get(d) > metric.get(top) ? d : top), null);
+
+  function stat(label, value, highlight) {
+    const div = document.createElement('div');
+    div.className = 'best-campaign-stat' + (highlight ? ' highlight' : '');
+    const l = document.createElement('div'); l.className = 'label'; l.textContent = label;
+    const v = document.createElement('div'); v.className = 'value'; v.textContent = value;
+    div.append(l, v);
+    return div;
+  }
+  function badge(text) {
+    const span = document.createElement('span');
+    span.className = 'best-campaign-badge';
+    span.textContent = text;
+    return span;
+  }
+
+  const body = document.createElement('div');
+  body.className = 'best-campaign-body';
+
+  const info = document.createElement('div');
+  info.className = 'best-campaign-info';
+  const badges = document.createElement('div');
+  badges.className = 'best-campaign-badges';
+  badges.append(badge(best.marca), badge(tipoLabel(best.campaignId)));
+  const name = document.createElement('div');
+  name.className = 'best-campaign-name';
+  name.textContent = best.campaignName;
+  info.append(badges, name);
+
+  const stats = document.createElement('div');
+  stats.className = 'best-campaign-stats';
+  Object.keys(BEST_CAMPAIGN_METRICS).forEach(key => {
+    const m = BEST_CAMPAIGN_METRICS[key];
+    stats.appendChild(stat(m.label, m.fmt(best), key === metricKey));
+  });
+  stats.appendChild(stat('Días activo', fmtInt.format(best.diasActivo)));
+
+  body.append(info, stats);
+  container.appendChild(body);
+}
+
+// Dropdown "según {criterio}" — reusa las clases .multiselect-btn /
+// .multiselect-panel (mismo look glass que Marca/Tipo, y los mismos
+// listeners globales de cierre por clic afuera / Escape ya cubren
+// cualquier elemento con esas clases), pero es de selección única: elegir
+// una opción cierra el panel y vuelve a renderizar todo con ese criterio.
+function buildBestCampaignSortDropdown(metricKey) {
+  const wrap = document.createElement('div');
+  wrap.className = 'multiselect best-campaign-sort';
+
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'multiselect-btn best-campaign-sort-btn';
+  btn.setAttribute('aria-expanded', 'false');
+  btn.textContent = 'según ' + BEST_CAMPAIGN_METRICS[metricKey].label.toLowerCase();
+
+  const panel = document.createElement('div');
+  panel.className = 'multiselect-panel best-campaign-sort-panel';
+  panel.hidden = true;
+  panel.addEventListener('click', (ev) => ev.stopPropagation());
+
+  Object.keys(BEST_CAMPAIGN_METRICS).forEach(key => {
+    const opt = document.createElement('button');
+    opt.type = 'button';
+    opt.className = 'multiselect-option best-campaign-sort-option' + (key === metricKey ? ' is-active' : '');
+    opt.textContent = BEST_CAMPAIGN_METRICS[key].label;
+    opt.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      state.bestCampaignSort = key;
+      renderAll();
+    });
+    panel.appendChild(opt);
+  });
+
+  btn.addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    const willOpen = panel.hidden;
+    document.querySelectorAll('.multiselect-panel').forEach(p => { p.hidden = true; });
+    document.querySelectorAll('.multiselect-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    panel.hidden = !willOpen;
+    btn.setAttribute('aria-expanded', String(willOpen));
+  });
+
+  wrap.append(btn, panel);
+  return wrap;
+}
+
 function renderTablaCampanas(rows, rowsCmp) {
   const data = aggregateByCampaign(rows);
   const cmpData = rowsCmp ? new Map(aggregateByCampaign(rowsCmp).map(d => [d.marca + '|' + d.campaignName + '|' + d.campaignId, d])) : null;
@@ -950,6 +1079,7 @@ function renderAll() {
   renderChartEventos(rows, f.start, f.end);
   renderTablaGeneral(rows, rowsCmp);
 
+  renderBestCampaign(rows);
   renderChartTiposTiempo(rows);
   renderTablaCampanas(rows, rowsCmp);
   renderTablaTipos(rows, rowsCmp);
