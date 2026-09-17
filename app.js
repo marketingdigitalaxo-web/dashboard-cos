@@ -40,24 +40,24 @@ function tipoLabel(id) { return TIPO_LABELS[id] || id; }
 // compara sin importar mayúsculas/espacios.
 const USERS = {
   'btorres@grupoaxo.com': 'Benja',
-   'pemmer@grupoaxo.com': 'Poli',
-   'caravena@grupoaxo.com': 'Cami',
-   'nvalenzuelah@grupoaxo.com': 'Nati',
-   'ccox@grupoaxo.com': 'Cata',
-   'ilopez@grupoaxo.com': 'Nacha',
-   'fcarrasco@grupoaxo.com': 'Fran',
-   'jossandon@grupoaxo.com': 'Joaco',
-   'tvaldesk@grupoaxo.com': 'Tom',
-   'drodriguez@grupoaxo.com': 'Dani',
-   'rmalpica@grupoaxo.com': 'Rafa',
-   'iravanal@grupoaxo.com': 'Isi',
-   'jcampos@grupoaxo.com': 'Jose',
-   'icruz@grupoaxo.com': 'Isi',
-   'ajunemann@grupoaxo.com': 'Anto',
-   'jpolanco@grupoaxo.com': 'Jose',
-   'asalgadob@grupoaxo.com': 'Anto',
-   'mwallace@grupoaxo.com': 'Maax',
-   'pmgomez@grupoaxo.com': 'Pia',
+  'pemmer@grupoaxo.com': 'Poli',
+  'caravena@grupoaxo.com': 'Cami',
+  'nvalenzuelah@grupoaxo.com': 'Nati',
+  'ccox@grupoaxo.com': 'Cata',
+  'ilopez@grupoaxo.com': 'Nacha',
+  'fcarrasco@grupoaxo.com': 'Fran',
+  'jossandon@grupoaxo.com': 'Joaco',
+  'tvaldesk@grupoaxo.com': 'Tom',
+  'drodriguez@grupoaxo.com': 'Dani',
+  'rmalpica@grupoaxo.com': 'Rafa',
+  'iravanal@grupoaxo.com': 'Isi',
+  'jcampos@grupoaxo.com': 'Jose',
+  'icruz@grupoaxo.com': 'Isi',
+  'ajunemann@grupoaxo.com': 'Anto',
+  'jpolanco@grupoaxo.com': 'Jose',
+  'asalgadob@grupoaxo.com': 'Anto',
+  'mwallace@grupoaxo.com': 'Maax',
+  'pmgomez@grupoaxo.com': 'Pia',
 };
 const AUTH_STORAGE_KEY = 'dashboard_auth_v1';
 const TITULO_DEFAULT = 'Campañas on-site — todas las marcas';
@@ -185,12 +185,91 @@ const state = {
   generatedAt: null,
   marcas: [],
   tipos: [],
-  filters: { start: null, end: null, marca: '', tipo: '' },
+  filters: { start: null, end: null, marcas: new Set(), tipos: new Set() },
   compare: { enabled: false, start: null, end: null },
   charts: {}, // id -> Chart.js instance
   lastTableData: {}, // id -> {headers, rows, sortValues} para el toggle "ver como tabla"
   tableSort: {}, // tableId -> {index, dir} — se mantiene entre re-renders (cambios de filtro)
 };
+
+// Filtros de Marca / Tipo de campaña: dropdown de selección múltiple con
+// checkboxes (en vez de un <select> simple). Un Set vacío significa "sin
+// filtrar" (equivalente a la opción "Todas/Todos" de antes) — así nunca
+// queda el dashboard en blanco por no tener nada marcado.
+let msMarca, msTipo;
+function createMultiSelect({ btnId, panelId, listId, clearId, allLabel, labelFor }) {
+  const btn = document.getElementById(btnId);
+  const panel = document.getElementById(panelId);
+  const list = document.getElementById(listId);
+  const clearBtn = document.getElementById(clearId);
+  const selected = new Set();
+  let onChangeFn = () => {};
+
+  function updateLabel() {
+    if (selected.size === 0) btn.textContent = allLabel;
+    else if (selected.size === 1) btn.textContent = labelFor(Array.from(selected)[0]);
+    else btn.textContent = selected.size + ' seleccionadas';
+  }
+
+  function setOptions(values) {
+    list.innerHTML = '';
+    values.forEach(v => {
+      const row = document.createElement('label');
+      row.className = 'multiselect-option';
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.value = v;
+      cb.checked = selected.has(v);
+      cb.addEventListener('change', () => {
+        if (cb.checked) selected.add(v); else selected.delete(v);
+        updateLabel();
+        onChangeFn();
+      });
+      const span = document.createElement('span');
+      span.textContent = labelFor(v);
+      row.append(cb, span);
+      list.appendChild(row);
+    });
+  }
+
+  function closeAllOthers() {
+    document.querySelectorAll('.multiselect-panel').forEach(p => { if (p !== panel) p.hidden = true; });
+    document.querySelectorAll('.multiselect-btn').forEach(b => { if (b !== btn) b.setAttribute('aria-expanded', 'false'); });
+  }
+
+  btn.addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    const willOpen = panel.hidden;
+    closeAllOthers();
+    panel.hidden = !willOpen;
+    btn.setAttribute('aria-expanded', String(willOpen));
+  });
+  panel.addEventListener('click', (ev) => ev.stopPropagation());
+  clearBtn.addEventListener('click', () => {
+    selected.clear();
+    list.querySelectorAll('input[type="checkbox"]').forEach(cb => { cb.checked = false; });
+    updateLabel();
+    onChangeFn();
+  });
+
+  updateLabel();
+
+  return {
+    get selected() { return selected; },
+    setOptions,
+    onChange(fn) { onChangeFn = fn; },
+  };
+}
+// Cierra cualquier panel abierto al hacer clic afuera o con Escape.
+document.addEventListener('click', () => {
+  document.querySelectorAll('.multiselect-panel').forEach(p => { p.hidden = true; });
+  document.querySelectorAll('.multiselect-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+});
+document.addEventListener('keydown', (ev) => {
+  if (ev.key !== 'Escape') return;
+  document.querySelectorAll('.multiselect-panel').forEach(p => { p.hidden = true; });
+  document.querySelectorAll('.multiselect-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+});
 
 // ---------- Carga de datos ----------
 async function loadData() {
@@ -204,11 +283,13 @@ async function loadData() {
 }
 
 // ---------- Filtrado ----------
-function filterRows(rows, { start, end, marca, tipo }) {
+// marcas/tipos son Sets; vacío = sin filtrar por ese campo (equivalente a
+// la antigua opción "Todas/Todos").
+function filterRows(rows, { start, end, marcas, tipos }) {
   return rows.filter(r =>
     r.fecha >= start && r.fecha <= end &&
-    (!marca || r.marca === marca) &&
-    (!tipo || r.campaignId === tipo)
+    (!marcas.size || marcas.has(r.marca)) &&
+    (!tipos.size || tipos.has(r.campaignId))
   );
 }
 
@@ -834,8 +915,8 @@ function currentFilters() {
   return {
     start: document.getElementById('f-start').value || def.start,
     end: document.getElementById('f-end').value || def.end,
-    marca: document.getElementById('f-marca').value,
-    tipo: document.getElementById('f-tipo').value,
+    marcas: msMarca.selected,
+    tipos: msTipo.selected,
   };
 }
 
@@ -878,8 +959,17 @@ function renderAll() {
 function wireFilters() {
   document.getElementById('f-start').addEventListener('change', renderAll);
   document.getElementById('f-end').addEventListener('change', renderAll);
-  document.getElementById('f-marca').addEventListener('change', renderAll);
-  document.getElementById('f-tipo').addEventListener('change', renderAll);
+
+  msMarca = createMultiSelect({
+    btnId: 'f-marca-btn', panelId: 'f-marca-panel', listId: 'f-marca-list', clearId: 'f-marca-clear',
+    allLabel: 'Todas', labelFor: (v) => v,
+  });
+  msTipo = createMultiSelect({
+    btnId: 'f-tipo-btn', panelId: 'f-tipo-panel', listId: 'f-tipo-list', clearId: 'f-tipo-clear',
+    allLabel: 'Todos', labelFor: (v) => tipoLabel(v),
+  });
+  msMarca.onChange(renderAll);
+  msTipo.onChange(renderAll);
 
   const cmpOn = document.getElementById('f-compare-on');
   const cmpRange = document.getElementById('compare-range');
@@ -904,16 +994,8 @@ function wireTabs() {
 }
 
 function populateSelectOptions() {
-  const marcaSel = document.getElementById('f-marca');
-  state.marcas.forEach(m => {
-    const opt = document.createElement('option'); opt.value = m; opt.textContent = m;
-    marcaSel.appendChild(opt);
-  });
-  const tipoSel = document.getElementById('f-tipo');
-  state.tipos.forEach(t => {
-    const opt = document.createElement('option'); opt.value = t; opt.textContent = tipoLabel(t);
-    tipoSel.appendChild(opt);
-  });
+  msMarca.setOptions(state.marcas);
+  msTipo.setOptions(state.tipos);
 }
 
 async function init() {
