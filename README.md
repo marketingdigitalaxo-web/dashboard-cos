@@ -118,6 +118,12 @@ requirements.txt                  dependencias de scripts/fetch_data.py
 - Tabla por marca: cantidad de campañas, ingresos, ingresos por campaña.
 
 **Campañas**
+- Tarjeta "Mejor campaña del período": la campaña con el mejor valor
+  dentro del período/filtros actuales, según el criterio elegido en el
+  dropdown "según..." (arriba a la derecha de la tarjeta) — Ingresos
+  (por defecto), CTR, Conversión total o Views. Al cambiar de criterio
+  se recalcula la campaña ganadora y se resalta en naranjo el dato que
+  corresponde.
 - Ingresos por día, desglosados por tipo de campaña (top 4 + "Otros").
 - Tabla por campaña con "Días activo" (cantidad de días distintos con
   datos dentro del período filtrado) y el embudo completo: View → Click
