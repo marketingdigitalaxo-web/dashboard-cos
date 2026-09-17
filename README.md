@@ -147,6 +147,14 @@ períodos alineados por "día 1, día 2..." (no por fecha calendario, para
 poder comparar peras con peras aunque los meses tengan distinto largo), y
 las tablas agregan columnas del período anterior + variación %.
 
+**Marca y Tipo de campaña son de selección múltiple**: son un botón que
+al hacer clic despliega una lista con checkbox por opción — puedes
+marcar varias marcas (o varios tipos) a la vez y el dashboard filtra por
+"cualquiera de las marcadas". El botón muestra "Todas"/"Todos" cuando no
+hay nada marcado (sin filtro), el nombre cuando hay una sola marcada, o
+"N seleccionadas" cuando hay varias. "Todas (limpiar selección)" arriba
+de la lista desmarca todo de una vez.
+
 **Posición (#)**: las tablas de Marca, Campaña y Tipo de campaña traen
 una primera columna "#" con el número de fila tal como se ve en
 pantalla — si ordenas por otra columna, se recalcula sola.
