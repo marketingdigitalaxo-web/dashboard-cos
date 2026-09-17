@@ -57,6 +57,7 @@ const USERS = {
    'jpolanco@grupoaxo.com': 'Jose',
    'asalgadob@grupoaxo.com': 'Anto',
    'mwallace@grupoaxo.com': 'Maax',
+   'pmgomez@grupoaxo.com': 'Pia',
 };
 const AUTH_STORAGE_KEY = 'dashboard_auth_v1';
 const TITULO_DEFAULT = 'Campañas on-site — todas las marcas';
