@@ -17,6 +17,7 @@
   --page-plane:     #14120f;   /* color sólido de respaldo (texto de tooltip, etc.) */
   --surface-1:      rgba(26, 22, 19, 0.45);   /* vidrio: tarjetas / paneles */
   --surface-1-strong: rgba(20, 17, 15, 0.62); /* vidrio más opaco: header sticky, filtros */
+  --surface-2-strong: rgb(45 40 34); /* color plano para listas de filtro */
   --surface-2:      rgba(255, 255, 255, 0.07); /* elementos anidados: inputs, hover de fila */
   --text-primary:   #ffffff;
   --text-secondary: rgba(255,255,255,0.74);
@@ -62,6 +63,7 @@
   --page-plane:     #f9f9f7;
   --surface-1:      #fcfcfb;
   --surface-1-strong: #fcfcfb;
+  --surface-2-strong: #f2f1ed;
   --surface-2:      #f2f1ed;
   --text-primary:   #0b0b0b;
   --text-secondary: #52514e;
@@ -371,7 +373,7 @@ nav.tabs button[aria-selected="true"] {
   z-index: 20;
   min-width: 230px;
   max-width: 300px;
-  background: var(--surface-1-strong);
+  background: var(--surface-2-strong);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   backdrop-filter: blur(var(--glass-blur));
@@ -520,6 +522,114 @@ nav.tabs button[aria-selected="true"] {
   text-decoration: underline;
 }
 .link-btn:hover { color: var(--accent-strong); }
+
+/* ---------- Tarjeta "Mejor campaña del período" ---------- */
+.best-campaign-card {
+  /* position+z-index explícitos: .card ya es su propio stacking context
+     (backdrop-filter), así que sin esto el dropdown "según..." quedaría
+     atrapado detrás de la tarjeta siguiente (mismo caso que .filters). */
+  position: relative;
+  z-index: 5;
+  border-left: 3px solid var(--accent);
+}
+.best-campaign-card .card-head h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.best-campaign-card .card-head svg { flex: none; color: var(--accent); }
+.best-campaign-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.best-campaign-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.best-campaign-badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.best-campaign-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-secondary);
+}
+.best-campaign-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  word-break: break-word;
+}
+.best-campaign-stats {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.best-campaign-stat .label {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+.best-campaign-stat .value {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+.best-campaign-stat.highlight .value { color: var(--accent); }
+
+/* Dropdown "según {criterio}" — reusa el look de .multiselect-btn /
+   .multiselect-panel (mismo componente visual que Marca/Tipo) pero más
+   compacto/discreto, ya que va dentro de un card-head junto al título. */
+.best-campaign-sort-btn {
+  min-width: 0;
+  max-width: none;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+  background: transparent;
+  border-color: transparent;
+}
+.best-campaign-sort-btn:hover {
+  color: var(--text-primary);
+  background: var(--surface-2);
+  border-color: var(--border);
+}
+.best-campaign-sort-btn[aria-expanded="true"] {
+  color: var(--text-primary);
+  background: var(--surface-2);
+  border-color: var(--accent);
+}
+.best-campaign-sort-panel {
+  left: auto;
+  right: 0;
+  min-width: 180px;
+}
+.best-campaign-sort-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+.best-campaign-sort-option.is-active {
+  color: var(--accent);
+  font-weight: 600;
+}
 
 /* ---------- Tablas ---------- */
 .table-scroll {
