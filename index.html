@@ -26,7 +26,7 @@
 <div class="wrap">
 
   <header class="top">
-    <h1 id="titulo-principal">Campañas on-site</h1>
+    <h1 id="titulo-principal">Campañas on-site — todas las marcas</h1>
     <div class="top-right">
       <span class="actualizado" id="actualizado">Cargando datos…</span>
       <button type="button" id="logout-link" class="link-btn" hidden>Cambiar de usuario</button>
@@ -40,10 +40,14 @@
 
   <section class="filters" aria-label="Filtros">
     <div class="filter-field">
-      <label for="f-marca">Marca</label>
-      <select id="f-marca">
-        <option value="">Todas</option>
-      </select>
+      <label id="f-marca-label">Marca</label>
+      <div class="multiselect">
+        <button type="button" class="multiselect-btn" id="f-marca-btn" aria-expanded="false" aria-labelledby="f-marca-label">Todas</button>
+        <div class="multiselect-panel" id="f-marca-panel" hidden>
+          <button type="button" class="multiselect-clear" id="f-marca-clear">Todas (limpiar selección)</button>
+          <div class="multiselect-list" id="f-marca-list"></div>
+        </div>
+      </div>
     </div>
     <div class="filter-field">
       <label for="f-start">Desde</label>
@@ -54,10 +58,14 @@
       <input type="date" id="f-end" />
     </div>
     <div class="filter-field">
-      <label for="f-tipo">Tipo de campaña</label>
-      <select id="f-tipo">
-        <option value="">Todos</option>
-      </select>
+      <label id="f-tipo-label">Tipo de campaña</label>
+      <div class="multiselect">
+        <button type="button" class="multiselect-btn" id="f-tipo-btn" aria-expanded="false" aria-labelledby="f-tipo-label">Todos</button>
+        <div class="multiselect-panel" id="f-tipo-panel" hidden>
+          <button type="button" class="multiselect-clear" id="f-tipo-clear">Todos (limpiar selección)</button>
+          <div class="multiselect-list" id="f-tipo-list"></div>
+        </div>
+      </div>
     </div>
     <div class="filter-field compare-toggle">
       <input type="checkbox" id="f-compare-on" />
