@@ -285,6 +285,13 @@ nav.tabs button[aria-selected="true"] {
 
 /* ---------- Filtros ---------- */
 .filters {
+  /* .filters ya es su propio "stacking context" por el backdrop-filter
+     (regla compartida .filters,.kpi,.card de más arriba) — sin position +
+     z-index explícitos acá, los paneles del multiselect (más abajo)
+     quedarían atrapados detrás de tarjetas posteriores (KPIs, gráficos),
+     que también son stacking contexts por su propio backdrop-filter. */
+  position: relative;
+  z-index: 5;
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
@@ -297,7 +304,11 @@ nav.tabs button[aria-selected="true"] {
   flex-direction: column;
   gap: 4px;
 }
-.filter-field label {
+/* Selector "> label" (hijo directo) a propósito: solo el título del
+   filtro ("Marca", "Tipo de campaña"...), NO los <label> anidados de
+   las opciones del multiselect (esos deben verse con su texto normal,
+   no en mayúsculas). */
+.filter-field > label {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: .03em;
@@ -320,6 +331,95 @@ nav.tabs button[aria-selected="true"] {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
 }
+/* ---------- Filtro de selección múltiple (Marca / Tipo de campaña) ---------- */
+.multiselect { position: relative; }
+.multiselect-btn {
+  font: inherit;
+  padding: 7px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-primary);
+  min-width: 140px;
+  max-width: 220px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.multiselect-btn::after {
+  content: '▾';
+  color: var(--text-muted);
+  font-size: 10px;
+  flex: none;
+}
+.multiselect-btn:focus,
+.multiselect-btn[aria-expanded="true"] {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+.multiselect-panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 20;
+  min-width: 230px;
+  max-width: 300px;
+  background: var(--surface-1-strong);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: var(--glass-shadow);
+  padding: 6px;
+}
+.multiselect-panel[hidden] { display: none; }
+.multiselect-clear {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  background: none;
+  border: none;
+  padding: 7px 8px;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+}
+.multiselect-clear:hover { background: var(--surface-2); color: var(--accent-strong); }
+.multiselect-list {
+  max-height: 240px;
+  overflow-y: auto;
+  margin-top: 2px;
+  border-top: 1px solid var(--gridline);
+  padding-top: 4px;
+}
+.multiselect-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+.multiselect-option:hover { background: var(--surface-2); }
+.multiselect-option input[type="checkbox"] {
+  accent-color: var(--accent);
+  width: 15px;
+  height: 15px;
+  flex: none;
+}
+
 .filter-field.compare-toggle {
   flex-direction: row;
   align-items: center;
