@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T16:08:06Z",
+  "generated_at": "2026-09-17T15:03:04Z",
   "rows": [
     {
       "marca": "Andes",
@@ -671,17 +671,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-05-31",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 3720,
-      "click": 225,
-      "addToCart": 161,
-      "purchase": 8,
-      "ingresos": 834149.0006990002
     },
     {
       "marca": "Andes",
@@ -1380,23 +1369,23 @@
       "marca": "Marmot",
       "fecha": "2026-06-01",
       "campaignName": "Cyber_Texto-PDP_Todo-10_01.06.26",
-      "campaignId": "pers-text-pdp",
-      "view": 13815,
-      "click": 225,
-      "addToCart": 126,
-      "purchase": 41,
-      "ingresos": 3400233.9980010013
-    },
-    {
-      "marca": "Marmot",
-      "fecha": "2026-06-01",
-      "campaignName": "Cyber_Texto-PDP_Todo-10_01.06.26",
       "campaignId": "pers-pop-up-ext",
       "view": 0,
       "click": 0,
       "addToCart": 3,
       "purchase": 3,
       "ingresos": 221673.00061599998
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-06-01",
+      "campaignName": "Cyber_Texto-PDP_Todo-10_01.06.26",
+      "campaignId": "pers-text-pdp",
+      "view": 13815,
+      "click": 225,
+      "addToCart": 126,
+      "purchase": 41,
+      "ingresos": 3400233.9980010013
     },
     {
       "marca": "Marmot",
@@ -1540,17 +1529,6 @@
       "addToCart": 5834,
       "purchase": 302,
       "ingresos": 16750443.967356995
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-01",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 26264,
-      "click": 1847,
-      "addToCart": 747,
-      "purchase": 40,
-      "ingresos": 2958988.9985270016
     },
     {
       "marca": "Andes",
@@ -2510,17 +2488,6 @@
       "ingresos": 888625.9990029999
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-02",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 16607,
-      "click": 1160,
-      "addToCart": 398,
-      "purchase": 47,
-      "ingresos": 3536214.000052
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-06-03",
       "campaignName": "Cyber_Banner-PLP_Calzado-10_03.06.2026",
@@ -3335,17 +3302,6 @@
       "ingresos": 67493.000203
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-03",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 12502,
-      "click": 871,
-      "addToCart": 311,
-      "purchase": 36,
-      "ingresos": 2589961.0009939997
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-06-04",
       "campaignName": "Cyber_PLP_Generico-Cat_CHAQUETA_02.06.2026",
@@ -3775,17 +3731,6 @@
       "ingresos": 1055092.000284
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-04",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2516,
-      "click": 182,
-      "addToCart": 43,
-      "purchase": 3,
-      "ingresos": 238946.99992600002
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-06-05",
       "campaignName": "Cyber_pop-up_todo10_03-6-26",
@@ -3918,17 +3863,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-05",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1224,
-      "click": 69,
-      "addToCart": 13,
-      "purchase": 1,
-      "ingresos": 129980.000433
-    },
-    {
       "marca": "GAP",
       "fecha": "2026-06-06",
       "campaignName": "Cyber_Banner-Menu_Extra-10_03.06.26",
@@ -4006,17 +3940,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-06",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1506,
-      "click": 94,
-      "addToCart": 33,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "GAP",
       "fecha": "2026-06-07",
       "campaignName": "Cyber_Banner-Menu_Extra-10_03.06.26",
@@ -4090,17 +4013,6 @@
       "view": 1,
       "click": 0,
       "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-07",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1987,
-      "click": 103,
-      "addToCart": 26,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -4213,17 +4125,6 @@
       "addToCart": 29,
       "purchase": 9,
       "ingresos": 1366458.000503
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-08",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1935,
-      "click": 88,
-      "addToCart": 12,
-      "purchase": 1,
-      "ingresos": 109979.999586
     },
     {
       "marca": "Andes",
@@ -4347,17 +4248,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-09",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1518,
-      "click": 71,
-      "addToCart": 39,
-      "purchase": 1,
-      "ingresos": 70681.999731
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-06-10",
       "campaignName": "Banner-PLP_JS-Cochamo_08.06.26",
@@ -4455,17 +4345,6 @@
       "addToCart": 2,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-10",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2631,
-      "click": 171,
-      "addToCart": 46,
-      "purchase": 1,
-      "ingresos": 103982.999719
     },
     {
       "marca": "Andes",
@@ -4655,17 +4534,6 @@
       "ingresos": 41692.999891
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-11",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2159,
-      "click": 136,
-      "addToCart": 46,
-      "purchase": 4,
-      "ingresos": 283458.000037
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-06-12",
       "campaignName": "Banner-PLP_JS-Cochamo_08.06.26",
@@ -4807,17 +4675,6 @@
       "addToCart": 19,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-12",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1737,
-      "click": 103,
-      "addToCart": 37,
-      "purchase": 3,
-      "ingresos": 413925.00048000005
     },
     {
       "marca": "Andes",
@@ -4974,17 +4831,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-13",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1953,
-      "click": 125,
-      "addToCart": 38,
-      "purchase": 1,
-      "ingresos": 115485.999958
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-06-14",
       "campaignName": "Banner-PLP_JS-Cochamo_08.06.26",
@@ -5126,17 +4972,6 @@
       "addToCart": 52,
       "purchase": 1,
       "ingresos": 49890.000025
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-14",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2933,
-      "click": 156,
-      "addToCart": 36,
-      "purchase": 3,
-      "ingresos": 300964.99970299995
     },
     {
       "marca": "Andes",
@@ -5300,17 +5135,6 @@
       "view": 1,
       "click": 0,
       "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-15",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1539,
-      "click": 86,
-      "addToCart": 25,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -5511,17 +5335,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-16",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1377,
-      "click": 77,
-      "addToCart": 14,
-      "purchase": 1,
-      "ingresos": 49994.999694
     },
     {
       "marca": "Andes",
@@ -5733,17 +5546,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-17",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1238,
-      "click": 76,
-      "addToCart": 8,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-06-18",
       "campaignName": "Banner-PLP_JS-Mercury_15.06.26",
@@ -5940,17 +5742,6 @@
       "addToCart": 326,
       "purchase": 20,
       "ingresos": 1289354.001619
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-18",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2194,
-      "click": 130,
-      "addToCart": 60,
-      "purchase": 5,
-      "ingresos": 387956.000449
     },
     {
       "marca": "Andes",
@@ -6283,17 +6074,6 @@
       "ingresos": 276925.99926199997
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-19",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1369,
-      "click": 74,
-      "addToCart": 46,
-      "purchase": 2,
-      "ingresos": 173981.999474
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-06-20",
       "campaignName": "Banner-PLP_JS-Mercury_15.06.26",
@@ -6567,17 +6347,6 @@
       "addToCart": 34,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-20",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1195,
-      "click": 62,
-      "addToCart": 43,
-      "purchase": 4,
-      "ingresos": 278970.000021
     },
     {
       "marca": "Andes",
@@ -6888,17 +6657,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-21",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1388,
-      "click": 85,
-      "addToCart": 49,
-      "purchase": 1,
-      "ingresos": 176975.999618
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-06-22",
       "campaignName": "Pop-Up-Sticky_20%-2da_16.06.2026",
@@ -7207,17 +6965,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "VS",
-      "fecha": "2026-06-22",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1450,
-      "click": 91,
-      "addToCart": 23,
-      "purchase": 1,
-      "ingresos": 34992.999794
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-06-23",
       "campaignName": "Banner-PLP_Andes-Days_Chaquetas_23.06.26",
@@ -7469,17 +7216,6 @@
       "addToCart": 16,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-23",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1344,
-      "click": 84,
-      "addToCart": 29,
-      "purchase": 3,
-      "ingresos": 216168.000024
     },
     {
       "marca": "Andes",
@@ -7766,17 +7502,6 @@
       "addToCart": 31,
       "purchase": 1,
       "ingresos": 63980.000098
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-24",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1732,
-      "click": 106,
-      "addToCart": 34,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
@@ -8120,17 +7845,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-06-25",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 265,
-      "click": 57,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-06-25",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -8217,17 +7931,6 @@
       "addToCart": 5,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-25",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1869,
-      "click": 131,
-      "addToCart": 56,
-      "purchase": 4,
-      "ingresos": 284970.000158
     },
     {
       "marca": "Andes",
@@ -8560,17 +8263,6 @@
       "ingresos": 116477.36382384073
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-06-26",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 299,
-      "click": 80,
-      "addToCart": 14,
-      "purchase": 2,
-      "ingresos": 342618.10178859776
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-06-26",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -8646,17 +8338,6 @@
       "addToCart": 26,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-26",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1373,
-      "click": 81,
-      "addToCart": 22,
-      "purchase": 1,
-      "ingresos": 94990.000041
     },
     {
       "marca": "Andes",
@@ -8835,17 +8516,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-06-27",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 249,
-      "click": 64,
-      "addToCart": 16,
-      "purchase": 2,
-      "ingresos": 347140.963171229
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-06-27",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -8921,17 +8591,6 @@
       "addToCart": 13,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-27",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1158,
-      "click": 65,
-      "addToCart": 14,
-      "purchase": 4,
-      "ingresos": 367449.99886199995
     },
     {
       "marca": "Andes",
@@ -9088,17 +8747,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-06-28",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 222,
-      "click": 96,
-      "addToCart": 21,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-06-28",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -9172,17 +8820,6 @@
       "view": 361,
       "click": 22,
       "addToCart": 12,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-28",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1963,
-      "click": 105,
-      "addToCart": 57,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -9374,17 +9011,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-06-29",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 160,
-      "click": 46,
-      "addToCart": 7,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-06-29",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -9460,17 +9086,6 @@
       "addToCart": 13,
       "purchase": 1,
       "ingresos": 41989.999654
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-29",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1912,
-      "click": 112,
-      "addToCart": 75,
-      "purchase": 5,
-      "ingresos": 442825.00078299997
     },
     {
       "marca": "Andes",
@@ -9671,17 +9286,6 @@
       "ingresos": 109990.000146
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-06-30",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 498,
-      "click": 87,
-      "addToCart": 9,
-      "purchase": 2,
-      "ingresos": 190028.66897103345
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-06-30",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -9757,17 +9361,6 @@
       "addToCart": 18,
       "purchase": 1,
       "ingresos": 35981.999858
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-06-30",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1483,
-      "click": 102,
-      "addToCart": 34,
-      "purchase": 2,
-      "ingresos": 414954.99980700004
     },
     {
       "marca": "Andes",
@@ -9968,17 +9561,6 @@
       "ingresos": 197981.999723
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-01",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 619,
-      "click": 142,
-      "addToCart": 9,
-      "purchase": 2,
-      "ingresos": 342618.10196677106
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-01",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -10054,17 +9636,6 @@
       "addToCart": 31,
       "purchase": 2,
       "ingresos": 175159.999672
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-01",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 3211,
-      "click": 222,
-      "addToCart": 109,
-      "purchase": 7,
-      "ingresos": 490032.001071
     },
     {
       "marca": "Andes",
@@ -10309,17 +9880,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-02",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 299,
-      "click": 80,
-      "addToCart": 7,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-02",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -10406,17 +9966,6 @@
       "addToCart": 202,
       "purchase": 6,
       "ingresos": 623390.999231
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-02",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 4306,
-      "click": 376,
-      "addToCart": 316,
-      "purchase": 8,
-      "ingresos": 814799.9988819999
     },
     {
       "marca": "Andes",
@@ -10760,17 +10309,6 @@
       "ingresos": 353173.7275318593
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-03",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 610,
-      "click": 110,
-      "addToCart": 18,
-      "purchase": 5,
-      "ingresos": 254353.79335003687
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-03",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -10846,17 +10384,6 @@
       "addToCart": 140,
       "purchase": 1,
       "ingresos": 61180.000387
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-03",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 3013,
-      "click": 212,
-      "addToCart": 262,
-      "purchase": 5,
-      "ingresos": 452882.00179599994
     },
     {
       "marca": "Andes",
@@ -11156,17 +10683,6 @@
       "ingresos": 2507318.5191189093
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-04",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 169,
-      "click": 66,
-      "addToCart": 2,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-04",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -11240,17 +10756,6 @@
       "view": 410,
       "click": 69,
       "addToCart": 105,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-04",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1956,
-      "click": 125,
-      "addToCart": 50,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -11563,17 +11068,6 @@
       "ingresos": 1713969.9550332837
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-05",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 240,
-      "click": 71,
-      "addToCart": 2,
-      "purchase": 2,
-      "ingresos": 116931.93327156393
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-05",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -11649,17 +11143,6 @@
       "addToCart": 69,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-05",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2310,
-      "click": 140,
-      "addToCart": 79,
-      "purchase": 2,
-      "ingresos": 149980.000764
     },
     {
       "marca": "Andes",
@@ -11981,17 +11464,6 @@
       "ingresos": 1059386.4089326856
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-06",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 630,
-      "click": 94,
-      "addToCart": 25,
-      "purchase": 7,
-      "ingresos": 387321.3232249841
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-06",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -12111,17 +11583,6 @@
       "addToCart": 41,
       "purchase": 1,
       "ingresos": 57940.00007
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-06",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2092,
-      "click": 133,
-      "addToCart": 105,
-      "purchase": 3,
-      "ingresos": 261972.000221
     },
     {
       "marca": "Andes",
@@ -12410,17 +11871,6 @@
       "ingresos": 1406678.136314884
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-07",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 475,
-      "click": 71,
-      "addToCart": 2,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-07",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -12496,17 +11946,6 @@
       "addToCart": 38,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-07",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 3245,
-      "click": 262,
-      "addToCart": 129,
-      "purchase": 1,
-      "ingresos": 22179.99987
     },
     {
       "marca": "Andes",
@@ -12828,17 +12267,6 @@
       "ingresos": 879170.9796451558
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-08",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 363,
-      "click": 66,
-      "addToCart": 2,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-08",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -12914,17 +12342,6 @@
       "addToCart": 33,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-08",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2471,
-      "click": 204,
-      "addToCart": 94,
-      "purchase": 2,
-      "ingresos": 166960.00037700002
     },
     {
       "marca": "Andes",
@@ -13235,17 +12652,6 @@
       "ingresos": 2052898.9601316543
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-09",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 487,
-      "click": 112,
-      "addToCart": 14,
-      "purchase": 2,
-      "ingresos": 205561.7248113978
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-09",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -13321,17 +12727,6 @@
       "addToCart": 96,
       "purchase": 1,
       "ingresos": 43190.000307
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-09",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2057,
-      "click": 152,
-      "addToCart": 95,
-      "purchase": 2,
-      "ingresos": 259950.000185
     },
     {
       "marca": "Andes",
@@ -13686,17 +13081,6 @@
       "ingresos": 416587.4297520986
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-10",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 535,
-      "click": 116,
-      "addToCart": 46,
-      "purchase": 2,
-      "ingresos": 319752.5301372283
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-10",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -13772,17 +13156,6 @@
       "addToCart": 87,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-10",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1703,
-      "click": 94,
-      "addToCart": 36,
-      "purchase": 1,
-      "ingresos": 79990.000042
     },
     {
       "marca": "Andes",
@@ -14115,17 +13488,6 @@
       "ingresos": 301227.0781773709
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-11",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 121,
-      "click": 21,
-      "addToCart": 11,
-      "purchase": 2,
-      "ingresos": 335696.75552043127
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-11",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -14201,17 +13563,6 @@
       "addToCart": 37,
       "purchase": 1,
       "ingresos": 35180.000036
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-11",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1714,
-      "click": 105,
-      "addToCart": 44,
-      "purchase": 2,
-      "ingresos": 212459.99982700002
     },
     {
       "marca": "Andes",
@@ -14511,17 +13862,6 @@
       "ingresos": 330465.7707882689
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-12",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 299,
-      "click": 59,
-      "addToCart": 30,
-      "purchase": 7,
-      "ingresos": 960790.3372386418
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-12",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -14597,17 +13937,6 @@
       "addToCart": 83,
       "purchase": 3,
       "ingresos": 298139.999931
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-12",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1868,
-      "click": 110,
-      "addToCart": 35,
-      "purchase": 1,
-      "ingresos": 99989.999707
     },
     {
       "marca": "Andes",
@@ -14995,17 +14324,6 @@
       "ingresos": 1010347.6405743408
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-13",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 551,
-      "click": 96,
-      "addToCart": 43,
-      "purchase": 2,
-      "ingresos": 262622.8619064609
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-13",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -15092,17 +14410,6 @@
       "addToCart": 47,
       "purchase": 1,
       "ingresos": 70969.999614
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-13",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1772,
-      "click": 98,
-      "addToCart": 51,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
@@ -15501,17 +14808,6 @@
       "ingresos": 1082496.3984858799
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-14",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 434,
-      "click": 64,
-      "addToCart": 21,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-14",
       "campaignName": "Banner-PLP-Boton_Chaq-Impermeable_14.07.26",
@@ -15618,17 +14914,6 @@
       "view": 304,
       "click": 33,
       "addToCart": 28,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-14",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1384,
-      "click": 77,
-      "addToCart": 21,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -16073,17 +15358,6 @@
       "ingresos": 284120.1564540062
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-15",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 256,
-      "click": 62,
-      "addToCart": 32,
-      "purchase": 7,
-      "ingresos": 597670.8846353992
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-15",
       "campaignName": "Banner-PLP-Boton_Chaq-Impermeable_14.07.26",
@@ -16203,17 +15477,6 @@
       "addToCart": 19,
       "purchase": 3,
       "ingresos": 179142.999879
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-15",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1633,
-      "click": 84,
-      "addToCart": 29,
-      "purchase": 1,
-      "ingresos": 213560.000066
     },
     {
       "marca": "Andes",
@@ -16634,17 +15897,6 @@
       "ingresos": 421402.6776723982
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-16",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 226,
-      "click": 85,
-      "addToCart": 16,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-16",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -16753,17 +16005,6 @@
       "addToCart": 38,
       "purchase": 3,
       "ingresos": 148744.000336
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-16",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2406,
-      "click": 139,
-      "addToCart": 52,
-      "purchase": 1,
-      "ingresos": 31996.000421
     },
     {
       "marca": "Andes",
@@ -17206,17 +16447,6 @@
       "ingresos": 404946.77468101215
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-17",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 345,
-      "click": 85,
-      "addToCart": 18,
-      "purchase": 5,
-      "ingresos": 241335.72401473255
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-17",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -17347,17 +16577,6 @@
       "addToCart": 18,
       "purchase": 1,
       "ingresos": 58780.00012
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-17",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2153,
-      "click": 97,
-      "addToCart": 28,
-      "purchase": 5,
-      "ingresos": 343335.99949600006
     },
     {
       "marca": "Andes",
@@ -17734,17 +16953,6 @@
       "ingresos": 342915.0570640779
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-18",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 290,
-      "click": 69,
-      "addToCart": 21,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-18",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -17853,17 +17061,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-18",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1753,
-      "click": 66,
-      "addToCart": 12,
-      "purchase": 3,
-      "ingresos": 208950.999726
     },
     {
       "marca": "Andes",
@@ -18240,17 +17437,6 @@
       "ingresos": 1554162.2216451732
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-19",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 194,
-      "click": 55,
-      "addToCart": 7,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-19",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -18348,17 +17534,6 @@
       "addToCart": 29,
       "purchase": 2,
       "ingresos": 263095.999772
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-19",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2326,
-      "click": 146,
-      "addToCart": 31,
-      "purchase": 2,
-      "ingresos": 185872.999652
     },
     {
       "marca": "Andes",
@@ -18713,17 +17888,6 @@
       "ingresos": 1143632.6821872958
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-20",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 477,
-      "click": 119,
-      "addToCart": 50,
-      "purchase": 5,
-      "ingresos": 434354.50315106777
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-20",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -18841,17 +18005,6 @@
       "view": 0,
       "click": 0,
       "addToCart": 1,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-20",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1446,
-      "click": 67,
-      "addToCart": 10,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -19175,17 +18328,6 @@
       "ingresos": 1618393.688265031
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-21",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 662,
-      "click": 62,
-      "addToCart": 9,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-21",
       "campaignName": "Banner-Menu_Pluma-10_21.07.26",
@@ -19327,17 +18469,6 @@
       "addToCart": 38,
       "purchase": 1,
       "ingresos": 81982.000048
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-21",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1463,
-      "click": 89,
-      "addToCart": 23,
-      "purchase": 1,
-      "ingresos": 19196.000295
     },
     {
       "marca": "Andes",
@@ -19714,17 +18845,6 @@
       "ingresos": 729272.4184906438
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-22",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 619,
-      "click": 71,
-      "addToCart": 11,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-22",
       "campaignName": "Banner-Menu_Pluma-10_21.07.26",
@@ -19877,17 +18997,6 @@
       "addToCart": 22,
       "purchase": 1,
       "ingresos": 19592.000018
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-22",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1606,
-      "click": 97,
-      "addToCart": 42,
-      "purchase": 3,
-      "ingresos": 507425.999467
     },
     {
       "marca": "Andes",
@@ -20264,17 +19373,6 @@
       "ingresos": 459031.5078401986
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-23",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 475,
-      "click": 82,
-      "addToCart": 18,
-      "purchase": 9,
-      "ingresos": 638796.9346863381
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-23",
       "campaignName": "Banner-Menu_Pluma-10_21.07.26",
@@ -20414,17 +19512,6 @@
       "view": 1193,
       "click": 71,
       "addToCart": 23,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-23",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1553,
-      "click": 78,
-      "addToCart": 28,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -20825,17 +19912,6 @@
       "ingresos": 1055037.156450594
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-24",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 384,
-      "click": 66,
-      "addToCart": 2,
-      "purchase": 2,
-      "ingresos": 50231.16184377667
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-24",
       "campaignName": "Banner-Menu_Extra-10%-Sale_27.07.26",
@@ -21021,17 +20097,6 @@
       "addToCart": 11,
       "purchase": 1,
       "ingresos": 73987.999638
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-24",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1289,
-      "click": 81,
-      "addToCart": 32,
-      "purchase": 1,
-      "ingresos": 33996.000099
     },
     {
       "marca": "Andes",
@@ -21364,17 +20429,6 @@
       "ingresos": 950099.9394794488
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-25",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 48,
-      "click": 16,
-      "addToCart": 5,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-25",
       "campaignName": "Banner-Menu_Pluma-10_21.07.26",
@@ -21525,17 +20579,6 @@
       "view": 1088,
       "click": 61,
       "addToCart": 20,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-25",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1567,
-      "click": 105,
-      "addToCart": 18,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -21870,17 +20913,6 @@
       "ingresos": 563758.5669745576
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-26",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 352,
-      "click": 107,
-      "addToCart": 41,
-      "purchase": 7,
-      "ingresos": 831726.6289335891
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-26",
       "campaignName": "Banner-PLP_20%-2da_16.06.26",
@@ -22011,17 +21043,6 @@
       "addToCart": 33,
       "purchase": 1,
       "ingresos": 35990.99983
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-26",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2018,
-      "click": 115,
-      "addToCart": 46,
-      "purchase": 2,
-      "ingresos": 174771.999881
     },
     {
       "marca": "Andes",
@@ -22409,17 +21430,6 @@
       "ingresos": 746461.5709615992
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-27",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 678,
-      "click": 130,
-      "addToCart": 14,
-      "purchase": 2,
-      "ingresos": 100485.1688271254
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-27",
       "campaignName": "Banner-Menu_Extra-10%-Sale_27.07.26",
@@ -22583,17 +21593,6 @@
       "addToCart": 32,
       "purchase": 1,
       "ingresos": 36889.999594
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-27",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1531,
-      "click": 101,
-      "addToCart": 26,
-      "purchase": 1,
-      "ingresos": 179980.000344
     },
     {
       "marca": "Andes",
@@ -22959,17 +21958,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-28",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 395,
-      "click": 71,
-      "addToCart": 2,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-28",
       "campaignName": "Banner-Menu_Extra-10%-Sale_27.07.26",
@@ -23083,7 +22071,7 @@
       "marca": "UGG",
       "fecha": "2026-07-28",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 634,
       "click": 12,
       "addToCart": 6,
@@ -23133,17 +22121,6 @@
       "addToCart": 16,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-28",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1405,
-      "click": 100,
-      "addToCart": 19,
-      "purchase": 1,
-      "ingresos": 27495.000043
     },
     {
       "marca": "Andes",
@@ -23619,17 +22596,6 @@
       "ingresos": 924132.3228942552
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-29",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 925,
-      "click": 148,
-      "addToCart": 48,
-      "purchase": 5,
-      "ingresos": 260708.64376011243
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-29",
       "campaignName": "Banner-Menu_Extra-10%-Sale_27.07.26",
@@ -23743,7 +22709,7 @@
       "marca": "UGG",
       "fecha": "2026-07-29",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1380,
       "click": 23,
       "addToCart": 0,
@@ -23793,17 +22759,6 @@
       "addToCart": 10,
       "purchase": 1,
       "ingresos": 28989.999558
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-29",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1343,
-      "click": 98,
-      "addToCart": 30,
-      "purchase": 2,
-      "ingresos": 184761.99932499998
     },
     {
       "marca": "Andes",
@@ -24312,17 +23267,6 @@
       "ingresos": 814215.3916489801
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-30",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 644,
-      "click": 126,
-      "addToCart": 21,
-      "purchase": 5,
-      "ingresos": 212624.69565398793
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-30",
       "campaignName": "Banner-Menu_Extra-10%-Sale_27.07.26",
@@ -24425,7 +23369,7 @@
       "marca": "UGG",
       "fecha": "2026-07-30",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1693,
       "click": 20,
       "addToCart": 8,
@@ -24508,17 +23452,6 @@
       "addToCart": 6,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-30",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1427,
-      "click": 78,
-      "addToCart": 13,
-      "purchase": 1,
-      "ingresos": 80990.999978
     },
     {
       "marca": "Andes",
@@ -25038,17 +23971,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-07-31",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 651,
-      "click": 105,
-      "addToCart": 23,
-      "purchase": 5,
-      "ingresos": 351001.38424461224
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-07-31",
       "campaignName": "Banner-Menu_Extra-10%-Sale_27.07.26",
@@ -25140,7 +24062,7 @@
       "marca": "UGG",
       "fecha": "2026-07-31",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1507,
       "click": 17,
       "addToCart": 4,
@@ -25223,17 +24145,6 @@
       "addToCart": 1243,
       "purchase": 39,
       "ingresos": 1827709.0004010007
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-07-31",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1578,
-      "click": 88,
-      "addToCart": 5,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
@@ -25599,17 +24510,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-01",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 320,
-      "click": 80,
-      "addToCart": 41,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-01",
       "campaignName": "Banner-Menu_Extra-10%-Sale_27.07.26",
@@ -25679,7 +24579,7 @@
       "marca": "UGG",
       "fecha": "2026-08-01",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1469,
       "click": 13,
       "addToCart": 5,
@@ -25762,17 +24662,6 @@
       "addToCart": 1410,
       "purchase": 45,
       "ingresos": 1644788.9960780004
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-01",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1777,
-      "click": 92,
-      "addToCart": 18,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
@@ -26160,17 +25049,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-02",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 164,
-      "click": 75,
-      "addToCart": 5,
-      "purchase": 2,
-      "ingresos": 123761.90896828355
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-02",
       "campaignName": "Banner-Menu_Extra-10%-Sale_27.07.26",
@@ -26251,7 +25129,7 @@
       "marca": "UGG",
       "fecha": "2026-08-02",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1650,
       "click": 22,
       "addToCart": 8,
@@ -26334,17 +25212,6 @@
       "addToCart": 1759,
       "purchase": 82,
       "ingresos": 3413815.0123709952
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-02",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 3241,
-      "click": 134,
-      "addToCart": 17,
-      "purchase": 1,
-      "ingresos": 80990.999734
     },
     {
       "marca": "Andes",
@@ -26798,17 +25665,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-03",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 482,
-      "click": 82,
-      "addToCart": 9,
-      "purchase": 2,
-      "ingresos": 167185.9392635382
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-03",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -26922,7 +25778,7 @@
       "marca": "UGG",
       "fecha": "2026-08-03",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1176,
       "click": 12,
       "addToCart": 4,
@@ -26994,17 +25850,6 @@
       "addToCart": 5,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-03",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2103,
-      "click": 107,
-      "addToCart": 29,
-      "purchase": 1,
-      "ingresos": 79989.999697
     },
     {
       "marca": "Andes",
@@ -27304,17 +26149,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-04",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 295,
-      "click": 55,
-      "addToCart": 2,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-04",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -27384,7 +26218,7 @@
       "marca": "UGG",
       "fecha": "2026-08-04",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1144,
       "click": 5,
       "addToCart": 0,
@@ -27522,17 +26356,6 @@
       "addToCart": 2,
       "purchase": 1,
       "ingresos": 119984.000267
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-04",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2347,
-      "click": 166,
-      "addToCart": 47,
-      "purchase": 6,
-      "ingresos": 352133.99901800003
     },
     {
       "marca": "Andes",
@@ -27997,17 +26820,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-05",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 384,
-      "click": 66,
-      "addToCart": 9,
-      "purchase": 2,
-      "ingresos": 216960.24618966624
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-05",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -28077,7 +26889,7 @@
       "marca": "UGG",
       "fecha": "2026-08-05",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1110,
       "click": 17,
       "addToCart": 6,
@@ -28215,17 +27027,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-05",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1319,
-      "click": 92,
-      "addToCart": 13,
-      "purchase": 1,
-      "ingresos": 19988.000336
     },
     {
       "marca": "Andes",
@@ -28613,17 +27414,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-06",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 482,
-      "click": 75,
-      "addToCart": 43,
-      "purchase": 5,
-      "ingresos": 559555.5052166202
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-06",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -28682,7 +27472,7 @@
       "marca": "UGG",
       "fecha": "2026-08-06",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1315,
       "click": 15,
       "addToCart": 5,
@@ -28809,17 +27599,6 @@
       "addToCart": 1,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-06",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1273,
-      "click": 79,
-      "addToCart": 7,
-      "purchase": 1,
-      "ingresos": 67192.000073
     },
     {
       "marca": "Andes",
@@ -29284,17 +28063,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-07",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 676,
-      "click": 116,
-      "addToCart": 11,
-      "purchase": 2,
-      "ingresos": 123099.47106437496
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-07",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -29408,7 +28176,7 @@
       "marca": "UGG",
       "fecha": "2026-08-07",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 976,
       "click": 5,
       "addToCart": 0,
@@ -29522,17 +28290,6 @@
       "view": 299,
       "click": 19,
       "addToCart": 9,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-07",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1098,
-      "click": 56,
-      "addToCart": 2,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -29911,17 +28668,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-08",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 395,
-      "click": 50,
-      "addToCart": 16,
-      "purchase": 2,
-      "ingresos": 73073.89121091524
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-08",
       "campaignName": "Banner-PLP_Extra-10%-Chaquetas_07.08.26",
@@ -30002,7 +28748,7 @@
       "marca": "UGG",
       "fecha": "2026-08-08",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1104,
       "click": 10,
       "addToCart": 0,
@@ -30107,17 +28853,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-08",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1298,
-      "click": 69,
-      "addToCart": 27,
-      "purchase": 1,
-      "ingresos": 35495.999846
     },
     {
       "marca": "Andes",
@@ -30505,17 +29240,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-09",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 450,
-      "click": 128,
-      "addToCart": 50,
-      "purchase": 9,
-      "ingresos": 1464244.0984230896
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-09",
       "campaignName": "Banner-PLP_Extra-10%-Chaquetas_07.08.26",
@@ -30585,7 +29309,7 @@
       "marca": "UGG",
       "fecha": "2026-08-09",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 2563,
       "click": 38,
       "addToCart": 7,
@@ -30701,17 +29425,6 @@
       "addToCart": 1,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-09",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1736,
-      "click": 85,
-      "addToCart": 23,
-      "purchase": 1,
-      "ingresos": 99983.999926
     },
     {
       "marca": "Andes",
@@ -31110,17 +29823,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-10",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 525,
-      "click": 87,
-      "addToCart": 27,
-      "purchase": 5,
-      "ingresos": 116886.24873965057
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-10",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -31201,7 +29903,7 @@
       "marca": "UGG",
       "fecha": "2026-08-10",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1200,
       "click": 11,
       "addToCart": 7,
@@ -31273,17 +29975,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-10",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1291,
-      "click": 72,
-      "addToCart": 20,
-      "purchase": 2,
-      "ingresos": 234469.99979
     },
     {
       "marca": "Andes",
@@ -31726,17 +30417,6 @@
       "ingresos": 303671.2479968515
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-11",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 493,
-      "click": 66,
-      "addToCart": 16,
-      "purchase": 9,
-      "ingresos": 1103646.4836064908
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-11",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -31861,7 +30541,7 @@
       "marca": "UGG",
       "fecha": "2026-08-11",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1039,
       "click": 16,
       "addToCart": 1,
@@ -31922,17 +30602,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-11",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1191,
-      "click": 85,
-      "addToCart": 9,
-      "purchase": 1,
-      "ingresos": 146970.000167
     },
     {
       "marca": "Andes",
@@ -32430,17 +31099,6 @@
       "ingresos": 165267.14880220653
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-12",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 683,
-      "click": 137,
-      "addToCart": 16,
-      "purchase": 2,
-      "ingresos": 167185.93905566938
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-12",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -32565,7 +31223,7 @@
       "marca": "UGG",
       "fecha": "2026-08-12",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1023,
       "click": 4,
       "addToCart": 0,
@@ -32626,17 +31284,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-12",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1136,
-      "click": 76,
-      "addToCart": 8,
-      "purchase": 2,
-      "ingresos": 91188.000556
     },
     {
       "marca": "Andes",
@@ -33277,17 +31924,6 @@
       "ingresos": 106750.92903032944
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-13",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 375,
-      "click": 53,
-      "addToCart": 14,
-      "purchase": 5,
-      "ingresos": 201884.04396948343
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-13",
       "campaignName": "Banner-Menu_10%-Polar-Polerones_12.08.26",
@@ -33346,7 +31982,7 @@
       "marca": "UGG",
       "fecha": "2026-08-13",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1260,
       "click": 25,
       "addToCart": 7,
@@ -33449,17 +32085,6 @@
       "view": 27,
       "click": 0,
       "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-13",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1409,
-      "click": 78,
-      "addToCart": 21,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -34014,17 +32639,6 @@
       "ingresos": 461448.26600946154
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-14",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 605,
-      "click": 91,
-      "addToCart": 11,
-      "purchase": 2,
-      "ingresos": 296909.7997375984
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-14",
       "campaignName": "Banner-Menu_10%-Polar-Polerones_12.08.26",
@@ -34116,7 +32730,7 @@
       "marca": "UGG",
       "fecha": "2026-08-14",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1149,
       "click": 9,
       "addToCart": 7,
@@ -34221,17 +32835,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-14",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1286,
-      "click": 73,
-      "addToCart": 9,
-      "purchase": 1,
-      "ingresos": 45489.999638
     },
     {
       "marca": "Andes",
@@ -34718,17 +33321,6 @@
       "ingresos": 1820442.2044041036
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-15",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 183,
-      "click": 55,
-      "addToCart": 34,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-15",
       "campaignName": "Banner-Menu_10%-Polar-Polerones_12.08.26",
@@ -34809,7 +33401,7 @@
       "marca": "UGG",
       "fecha": "2026-08-15",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1333,
       "click": 2,
       "addToCart": 0,
@@ -34914,17 +33506,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-15",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1464,
-      "click": 96,
-      "addToCart": 22,
-      "purchase": 2,
-      "ingresos": 169980.00005099998
     },
     {
       "marca": "Andes",
@@ -35422,17 +34003,6 @@
       "ingresos": 925978.0159353798
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-16",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 363,
-      "click": 59,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-16",
       "campaignName": "Banner-Menu_10%-Polar-Polerones_12.08.26",
@@ -35513,7 +34083,7 @@
       "marca": "UGG",
       "fecha": "2026-08-16",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 2283,
       "click": 31,
       "addToCart": 9,
@@ -35618,17 +34188,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-16",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1883,
-      "click": 95,
-      "addToCart": 42,
-      "purchase": 1,
-      "ingresos": 174970.000164
     },
     {
       "marca": "Andes",
@@ -36302,17 +34861,6 @@
       "ingresos": 163051.4031476286
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-17",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 551,
-      "click": 64,
-      "addToCart": 9,
-      "purchase": 2,
-      "ingresos": 274067.0707108165
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-17",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -36426,7 +34974,7 @@
       "marca": "UGG",
       "fecha": "2026-08-17",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 1064,
       "click": 9,
       "addToCart": 0,
@@ -36498,17 +35046,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-17",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1403,
-      "click": 65,
-      "addToCart": 21,
-      "purchase": 1,
-      "ingresos": 38195.000307
     },
     {
       "marca": "Andes",
@@ -36907,17 +35444,6 @@
       "ingresos": 1308659.9845506267
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-18",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 208,
-      "click": 46,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-18",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -36987,7 +35513,7 @@
       "marca": "UGG",
       "fecha": "2026-08-18",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 988,
       "click": 8,
       "addToCart": 0,
@@ -37046,17 +35572,6 @@
       "view": 27,
       "click": 3,
       "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-18",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1236,
-      "click": 70,
-      "addToCart": 19,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -37446,17 +35961,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-19",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 587,
-      "click": 89,
-      "addToCart": 18,
-      "purchase": 5,
-      "ingresos": 518918.29030917597
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-19",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -37537,7 +36041,7 @@
       "marca": "UGG",
       "fecha": "2026-08-19",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 851,
       "click": 3,
       "addToCart": 0,
@@ -37598,17 +36102,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-19",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1799,
-      "click": 87,
-      "addToCart": 7,
-      "purchase": 1,
-      "ingresos": 69479.999586
     },
     {
       "marca": "Andes",
@@ -38029,17 +36522,6 @@
       "ingresos": 288917.1299415888
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-20",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 441,
-      "click": 64,
-      "addToCart": 32,
-      "purchase": 2,
-      "ingresos": 938584.9186105981
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-20",
       "campaignName": "AON_PDP-Text_20%-2da_03.08.26",
@@ -38109,7 +36591,7 @@
       "marca": "UGG",
       "fecha": "2026-08-20",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 919,
       "click": 7,
       "addToCart": 0,
@@ -38170,17 +36652,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-20",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1082,
-      "click": 60,
-      "addToCart": 12,
-      "purchase": 1,
-      "ingresos": 83189.999926
     },
     {
       "marca": "Andes",
@@ -38667,17 +37138,6 @@
       "ingresos": 1734014.452309981
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-21",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 701,
-      "click": 69,
-      "addToCart": 75,
-      "purchase": 2,
-      "ingresos": 91348.07641783082
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-21",
       "campaignName": "AON_PDP-Text_20%-2da_03.08.26",
@@ -38736,7 +37196,7 @@
       "marca": "UGG",
       "fecha": "2026-08-21",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 732,
       "click": 4,
       "addToCart": 0,
@@ -38808,17 +37268,6 @@
       "addToCart": 1341,
       "purchase": 51,
       "ingresos": 4547914.00071
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-21",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 933,
-      "click": 44,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
@@ -39294,17 +37743,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-22",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 215,
-      "click": 53,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-22",
       "campaignName": "AON_PDP-Text_20%-2da_03.08.26",
@@ -39352,7 +37790,7 @@
       "marca": "UGG",
       "fecha": "2026-08-22",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 794,
       "click": 7,
       "addToCart": 1,
@@ -39424,17 +37862,6 @@
       "addToCart": 1027,
       "purchase": 32,
       "ingresos": 2430216.9988989998
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-22",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1025,
-      "click": 47,
-      "addToCart": 3,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
@@ -39943,17 +38370,6 @@
       "ingresos": 748629.3491475971
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-23",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 144,
-      "click": 78,
-      "addToCart": 5,
-      "purchase": 2,
-      "ingresos": 228381.61118389663
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-23",
       "campaignName": "AON_PDP-Text_20%-2da_03.08.26",
@@ -40001,7 +38417,7 @@
       "marca": "UGG",
       "fecha": "2026-08-23",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 932,
       "click": 2,
       "addToCart": 0,
@@ -40073,17 +38489,6 @@
       "addToCart": 1191,
       "purchase": 31,
       "ingresos": 2168759.004296
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-23",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1525,
-      "click": 83,
-      "addToCart": 25,
-      "purchase": 2,
-      "ingresos": 215963.999996
     },
     {
       "marca": "Andes",
@@ -40625,17 +39030,6 @@
       "ingresos": 314864.1859525638
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-24",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 500,
-      "click": 78,
-      "addToCart": 9,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-24",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -40716,7 +39110,7 @@
       "marca": "UGG",
       "fecha": "2026-08-24",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 822,
       "click": 5,
       "addToCart": 2,
@@ -40788,17 +39182,6 @@
       "addToCart": 21,
       "purchase": 1,
       "ingresos": 39990.000316
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-24",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1221,
-      "click": 57,
-      "addToCart": 21,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
@@ -40986,17 +39369,6 @@
       "addToCart": 47,
       "purchase": 5,
       "ingresos": 263665.96125594503
-    },
-    {
-      "marca": "BBW",
-      "fecha": "2026-08-25",
-      "campaignName": "Sticky-Video-Simple",
-      "campaignId": "",
-      "view": 0,
-      "click": 19,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Banana",
@@ -41219,17 +39591,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-25",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 594,
-      "click": 110,
-      "addToCart": 23,
-      "purchase": 2,
-      "ingresos": 94089.20283081706
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-25",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -41288,7 +39649,7 @@
       "marca": "UGG",
       "fecha": "2026-08-25",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 578,
       "click": 4,
       "addToCart": 1,
@@ -41358,17 +39719,6 @@
       "view": 1,
       "click": 0,
       "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-25",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1365,
-      "click": 75,
-      "addToCart": 7,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -41879,17 +40229,6 @@
       "ingresos": 173536.21753451956
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-26",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 507,
-      "click": 53,
-      "addToCart": 2,
-      "purchase": 2,
-      "ingresos": 383506.5876634674
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-26",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -42003,7 +40342,7 @@
       "marca": "UGG",
       "fecha": "2026-08-26",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 972,
       "click": 7,
       "addToCart": 1,
@@ -42062,17 +40401,6 @@
       "view": 23,
       "click": 0,
       "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-26",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1164,
-      "click": 56,
-      "addToCart": 9,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -42583,17 +40911,6 @@
       "ingresos": 446780.9459982252
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-27",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 779,
-      "click": 73,
-      "addToCart": 37,
-      "purchase": 5,
-      "ingresos": 204351.06034706967
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-27",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -42674,7 +40991,7 @@
       "marca": "UGG",
       "fecha": "2026-08-27",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 761,
       "click": 0,
       "addToCart": 0,
@@ -42735,17 +41052,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-27",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1391,
-      "click": 84,
-      "addToCart": 61,
-      "purchase": 1,
-      "ingresos": 39990.000399
     },
     {
       "marca": "Andes",
@@ -43331,17 +41637,6 @@
       "ingresos": 918330.2681638844
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-28",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 299,
-      "click": 37,
-      "addToCart": 27,
-      "purchase": 5,
-      "ingresos": 378800.9851310895
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-28",
       "campaignName": "Banner-PLP_Extra-10-Sale_26.08.26",
@@ -43422,7 +41717,7 @@
       "marca": "UGG",
       "fecha": "2026-08-28",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 805,
       "click": 13,
       "addToCart": 0,
@@ -43483,17 +41778,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-28",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1115,
-      "click": 69,
-      "addToCart": 16,
-      "purchase": 1,
-      "ingresos": 79990.000069
     },
     {
       "marca": "Andes",
@@ -43980,17 +42264,6 @@
       "ingresos": 262099.76479055962
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-29",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 183,
-      "click": 59,
-      "addToCart": 39,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-29",
       "campaignName": "Banner-PLP_Extra-10-Sale_26.08.26",
@@ -44082,7 +42355,7 @@
       "marca": "UGG",
       "fecha": "2026-08-29",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 672,
       "click": 7,
       "addToCart": 4,
@@ -44165,17 +42438,6 @@
       "addToCart": 2,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-29",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1309,
-      "click": 78,
-      "addToCart": 5,
-      "purchase": 3,
-      "ingresos": 241552.999673
     },
     {
       "marca": "Andes",
@@ -44706,17 +42968,6 @@
       "ingresos": 394130.7421667894
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-30",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 352,
-      "click": 101,
-      "addToCart": 32,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-30",
       "campaignName": "Banner-PLP_Extra-10-Sale_26.08.26",
@@ -44786,7 +43037,7 @@
       "marca": "UGG",
       "fecha": "2026-08-30",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 955,
       "click": 13,
       "addToCart": 2,
@@ -44847,17 +43098,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-30",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1842,
-      "click": 108,
-      "addToCart": 52,
-      "purchase": 3,
-      "ingresos": 305120.000642
     },
     {
       "marca": "Andes",
@@ -45454,17 +43694,6 @@
       "ingresos": 1246961.7696103877
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-08-31",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 434,
-      "click": 39,
-      "addToCart": 7,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-08-31",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -45556,7 +43785,7 @@
       "marca": "UGG",
       "fecha": "2026-08-31",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 568,
       "click": 15,
       "addToCart": 1,
@@ -45615,17 +43844,6 @@
       "view": 24,
       "click": 0,
       "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-08-31",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1296,
-      "click": 68,
-      "addToCart": 8,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -46103,17 +44321,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-01",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 519,
-      "click": 62,
-      "addToCart": 9,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-01",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -46172,7 +44379,7 @@
       "marca": "UGG",
       "fecha": "2026-09-01",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 538,
       "click": 10,
       "addToCart": 2,
@@ -46242,17 +44449,6 @@
       "view": 1,
       "click": 0,
       "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-01",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1414,
-      "click": 85,
-      "addToCart": 9,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -46439,17 +44635,6 @@
       "campaignId": "pers-pop-up-ext",
       "view": 5,
       "click": 0,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "BBW",
-      "fecha": "2026-09-02",
-      "campaignName": "Sticky-Video-Simple",
-      "campaignId": "123",
-      "view": 5,
-      "click": 28,
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
@@ -46730,17 +44915,6 @@
       "ingresos": 214678.25925968194
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-02",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 480,
-      "click": 66,
-      "addToCart": 9,
-      "purchase": 5,
-      "ingresos": 644073.6047407722
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-02",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -46788,7 +44962,7 @@
       "marca": "UGG",
       "fecha": "2026-09-02",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 374,
       "click": 2,
       "addToCart": 0,
@@ -46849,17 +45023,6 @@
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-02",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1125,
-      "click": 88,
-      "addToCart": 5,
-      "purchase": 1,
-      "ingresos": 83190.000022
     },
     {
       "marca": "Andes",
@@ -46975,9 +45138,9 @@
       "marca": "Andes",
       "fecha": "2026-09-03",
       "campaignName": "TEST_Sticky-Multiple",
-      "campaignId": "pers-sticky-offers",
-      "view": 3,
-      "click": 6,
+      "campaignId": "pers-pop-up-ext",
+      "view": 1,
+      "click": 3,
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
@@ -46986,9 +45149,9 @@
       "marca": "Andes",
       "fecha": "2026-09-03",
       "campaignName": "TEST_Sticky-Multiple",
-      "campaignId": "pers-pop-up-ext",
-      "view": 1,
-      "click": 3,
+      "campaignId": "pers-sticky-offers",
+      "view": 3,
+      "click": 6,
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
@@ -47313,17 +45476,6 @@
       "ingresos": 587332.2646229306
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-03",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 329,
-      "click": 46,
-      "addToCart": 30,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-03",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -47382,7 +45534,7 @@
       "marca": "UGG",
       "fecha": "2026-09-03",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 538,
       "click": 5,
       "addToCart": 2,
@@ -47452,17 +45604,6 @@
       "view": 31,
       "click": 4,
       "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-03",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1586,
-      "click": 80,
-      "addToCart": 3,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -47696,17 +45837,6 @@
       "addToCart": 198,
       "purchase": 14,
       "ingresos": 673587.8147667224
-    },
-    {
-      "marca": "BBW",
-      "fecha": "2026-09-04",
-      "campaignName": "Sticky-Video-Simple",
-      "campaignId": "123",
-      "view": 5,
-      "click": 5,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "BBW",
@@ -48028,17 +46158,6 @@
       "ingresos": 0.0
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-04",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 215,
-      "click": 32,
-      "addToCart": 2,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-04",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -48097,7 +46216,7 @@
       "marca": "UGG",
       "fecha": "2026-09-04",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 481,
       "click": 5,
       "addToCart": 2,
@@ -48158,17 +46277,6 @@
       "addToCart": 229,
       "purchase": 5,
       "ingresos": 451110.00033199997
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-04",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1797,
-      "click": 115,
-      "addToCart": 48,
-      "purchase": 1,
-      "ingresos": 219959.999534
     },
     {
       "marca": "Andes",
@@ -48589,17 +46697,6 @@
       "ingresos": 123327.89696989366
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-05",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 153,
-      "click": 48,
-      "addToCart": 21,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-05",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -48669,7 +46766,7 @@
       "marca": "UGG",
       "fecha": "2026-09-05",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 425,
       "click": 1,
       "addToCart": 0,
@@ -48730,17 +46827,6 @@
       "addToCart": 230,
       "purchase": 8,
       "ingresos": 946010.001013
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-05",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2015,
-      "click": 115,
-      "addToCart": 33,
-      "purchase": 2,
-      "ingresos": 276952.000156
     },
     {
       "marca": "Andes",
@@ -49161,17 +47247,6 @@
       "ingresos": 167736.44895250342
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-06",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 148,
-      "click": 34,
-      "addToCart": 5,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-06",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -49230,7 +47305,7 @@
       "marca": "UGG",
       "fecha": "2026-09-06",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 546,
       "click": 2,
       "addToCart": 0,
@@ -49291,17 +47366,6 @@
       "addToCart": 370,
       "purchase": 12,
       "ingresos": 1194786.001975
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-06",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 3039,
-      "click": 167,
-      "addToCart": 33,
-      "purchase": 3,
-      "ingresos": 339142.000183
     },
     {
       "marca": "Andes",
@@ -49766,17 +47830,6 @@
       "ingresos": 116066.19446374402
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-07",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 359,
-      "click": 59,
-      "addToCart": 41,
-      "purchase": 5,
-      "ingresos": 286584.8862355204
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-07",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -49835,7 +47888,7 @@
       "marca": "UGG",
       "fecha": "2026-09-07",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 408,
       "click": 2,
       "addToCart": 3,
@@ -49896,17 +47949,6 @@
       "addToCart": 220,
       "purchase": 7,
       "ingresos": 506803.0002320001
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-07",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 2387,
-      "click": 132,
-      "addToCart": 35,
-      "purchase": 2,
-      "ingresos": 202454.999771
     },
     {
       "marca": "Andes",
@@ -50338,17 +48380,6 @@
       "ingresos": 830607.3347300468
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-08",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 249,
-      "click": 41,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-08",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -50418,7 +48449,7 @@
       "marca": "UGG",
       "fecha": "2026-09-08",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 361,
       "click": 0,
       "addToCart": 0,
@@ -50479,17 +48510,6 @@
       "addToCart": 270,
       "purchase": 11,
       "ingresos": 1353522.9993000003
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-08",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1651,
-      "click": 103,
-      "addToCart": 13,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
@@ -50932,17 +48952,6 @@
       "ingresos": 57061.13942730575
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-09",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 251,
-      "click": 23,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-09",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -51012,7 +49021,7 @@
       "marca": "UGG",
       "fecha": "2026-09-09",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 300,
       "click": 0,
       "addToCart": 0,
@@ -51106,17 +49115,6 @@
       "addToCart": 234,
       "purchase": 6,
       "ingresos": 398619.999854
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-09",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1430,
-      "click": 86,
-      "addToCart": 31,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
@@ -51482,17 +49480,6 @@
       "ingresos": 300224.28081693855
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-10",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 365,
-      "click": 41,
-      "addToCart": 37,
-      "purchase": 2,
-      "ingresos": 411123.44870223367
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-10",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -51573,7 +49560,7 @@
       "marca": "UGG",
       "fecha": "2026-09-10",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 433,
       "click": 7,
       "addToCart": 1,
@@ -51667,17 +49654,6 @@
       "addToCart": 430,
       "purchase": 12,
       "ingresos": 1244501.999654
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-10",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1417,
-      "click": 111,
-      "addToCart": 26,
-      "purchase": 2,
-      "ingresos": 249542.00022299998
     },
     {
       "marca": "Andes",
@@ -52131,17 +50107,6 @@
       "ingresos": 620979.6061902253
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-11",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 578,
-      "click": 66,
-      "addToCart": 21,
-      "purchase": 2,
-      "ingresos": 251201.49852721146
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-11",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -52222,7 +50187,7 @@
       "marca": "UGG",
       "fecha": "2026-09-11",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 397,
       "click": 2,
       "addToCart": 0,
@@ -52305,17 +50270,6 @@
       "addToCart": 306,
       "purchase": 6,
       "ingresos": 364942.999976
-    },
-    {
-      "marca": "VS",
-      "fecha": "2026-09-11",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1415,
-      "click": 81,
-      "addToCart": 23,
-      "purchase": 2,
-      "ingresos": 134869.999313
     },
     {
       "marca": "Andes",
@@ -52703,17 +50657,6 @@
       "ingresos": 178792.32955256233
     },
     {
-      "marca": "Surprice",
-      "fecha": "2026-09-12",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 142,
-      "click": 25,
-      "addToCart": 5,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "TNF",
       "fecha": "2026-09-12",
       "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
@@ -52783,7 +50726,7 @@
       "marca": "UGG",
       "fecha": "2026-09-12",
       "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
-      "campaignId": "pers-text-pdp-scroll",
+      "campaignId": "pers-text-pdp",
       "view": 373,
       "click": 6,
       "addToCart": 0,
@@ -52868,23 +50811,12 @@
       "ingresos": 483122.000213
     },
     {
-      "marca": "VS",
-      "fecha": "2026-09-12",
-      "campaignName": "filtros-pijamas",
-      "campaignId": "pers-size-filter",
-      "view": 1289,
-      "click": 63,
-      "addToCart": 25,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
       "marca": "Andes",
       "fecha": "2026-09-13",
       "campaignName": "AON_Banner-PLP_20%-2da_22.07.26",
       "campaignId": "pers-banner-plp",
-      "view": 500,
-      "click": 2,
+      "view": 570,
+      "click": 3,
       "addToCart": 1,
       "purchase": 0,
       "ingresos": 0.0
@@ -52894,9 +50826,9 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Pop-Up-Sticky_20%-2da_22.07.26",
       "campaignId": "pers-pop-up-ext",
-      "view": 9512,
-      "click": 200,
-      "addToCart": 57,
+      "view": 10863,
+      "click": 237,
+      "addToCart": 62,
       "purchase": 4,
       "ingresos": 200952.001101
     },
@@ -52905,19 +50837,19 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Texto-PDP_20%-2da_22.07.26",
       "campaignId": "pers-text-pdp",
-      "view": 9156,
-      "click": 29,
+      "view": 10429,
+      "click": 33,
       "addToCart": 13,
       "purchase": 4,
-      "ingresos": 247807.999491
+      "ingresos": 247807.99949000002
     },
     {
       "marca": "Andes",
       "fecha": "2026-09-13",
       "campaignName": "JS_Banner-Menu_Polar-Drop-Line_07.09.26",
       "campaignId": "pers-banner-menu",
-      "view": 1473,
-      "click": 19,
+      "view": 1671,
+      "click": 22,
       "addToCart": 1,
       "purchase": 1,
       "ingresos": 48190.000466
@@ -52927,9 +50859,9 @@
       "fecha": "2026-09-13",
       "campaignName": "JS_Banner-PLP_Polar-Drop-Line_07.09.26",
       "campaignId": "pers-banner-plp",
-      "view": 3447,
-      "click": 39,
-      "addToCart": 0,
+      "view": 3905,
+      "click": 42,
+      "addToCart": 1,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -52938,18 +50870,18 @@
       "fecha": "2026-09-13",
       "campaignName": "JS_Pop-Up_Polar-Drop-Line_07.09.26",
       "campaignId": "pers-overlay-pdp",
-      "view": 7316,
-      "click": 423,
-      "addToCart": 37,
-      "purchase": 1,
-      "ingresos": 116980.000137
+      "view": 8318,
+      "click": 478,
+      "addToCart": 48,
+      "purchase": 2,
+      "ingresos": 381969.999719
     },
     {
       "marca": "Andes",
       "fecha": "2026-09-13",
       "campaignName": "JS_Texto-PDP_Polar-Drop-Line_07.09.26",
       "campaignId": "pers-text-pdp",
-      "view": 336,
+      "view": 382,
       "click": 0,
       "addToCart": 0,
       "purchase": 0,
@@ -52960,7 +50892,7 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Banner-PLP_Cuidado-Corporal_24.06.26",
       "campaignId": "pers-banner-plp",
-      "view": 146,
+      "view": 131,
       "click": 0,
       "addToCart": 0,
       "purchase": 0,
@@ -52971,9 +50903,9 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Banner-PLP_Jabones-Revitalizantes_10.08.26",
       "campaignId": "pers-banner-plp",
-      "view": 302,
-      "click": 5,
-      "addToCart": 19,
+      "view": 269,
+      "click": 4,
+      "addToCart": 4,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -52982,7 +50914,7 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Banner-PLP_Layering_10.08.26",
       "campaignId": "pers-banner-plp",
-      "view": 127,
+      "view": 146,
       "click": 0,
       "addToCart": 0,
       "purchase": 0,
@@ -52993,9 +50925,9 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Banner-PLP_Velas_25.06.26",
       "campaignId": "pers-banner-plp",
-      "view": 485,
-      "click": 5,
-      "addToCart": 0,
+      "view": 449,
+      "click": 8,
+      "addToCart": 1,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -53004,33 +50936,33 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Banner-PLP_Wallflowers_24.06.26",
       "campaignId": "pers-banner-plp",
-      "view": 292,
-      "click": 0,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
+      "view": 351,
+      "click": 16,
+      "addToCart": 22,
+      "purchase": 2,
+      "ingresos": 81753.000673
     },
     {
       "marca": "BBW",
       "fecha": "2026-09-13",
       "campaignName": "AON_PopUp-Sticky_Newsletter_19.06.26",
       "campaignId": "pers-pop-up-ext",
-      "view": 7716,
-      "click": 141,
-      "addToCart": 38,
-      "purchase": 5,
-      "ingresos": 109303.0679254949
+      "view": 7626,
+      "click": 137,
+      "addToCart": 80,
+      "purchase": 3,
+      "ingresos": 114819.999854
     },
     {
       "marca": "BBW",
       "fecha": "2026-09-13",
       "campaignName": "Pop-Up_Concurso_07.09.26",
       "campaignId": "pers-overlay-pdp",
-      "view": 6891,
-      "click": 778,
-      "addToCart": 434,
-      "purchase": 14,
-      "ingresos": 1158735.0676568646
+      "view": 6882,
+      "click": 923,
+      "addToCart": 595,
+      "purchase": 12,
+      "ingresos": 849628.0009859999
     },
     {
       "marca": "Banana",
@@ -53070,31 +51002,31 @@
       "fecha": "2026-09-13",
       "campaignName": "Banner-PLP_Beveled_11.09.26",
       "campaignId": "pers-banner-plp",
-      "view": 695,
-      "click": 43,
-      "addToCart": 12,
-      "purchase": 3,
-      "ingresos": 215908.92811650966
+      "view": 722,
+      "click": 34,
+      "addToCart": 7,
+      "purchase": 2,
+      "ingresos": 130480.000735
     },
     {
       "marca": "DC",
       "fecha": "2026-09-13",
       "campaignName": "Banner-PLP_Puff_11.09.26",
       "campaignId": "pers-banner-plp",
-      "view": 784,
-      "click": 22,
-      "addToCart": 5,
-      "purchase": 2,
-      "ingresos": 74595.1436088699
+      "view": 726,
+      "click": 20,
+      "addToCart": 3,
+      "purchase": 1,
+      "ingresos": 45079.999599
     },
     {
       "marca": "GAP",
       "fecha": "2026-09-13",
       "campaignName": "AON_Texto-PDP_Extra-20%-Poleras_06.08.26",
       "campaignId": "pers-text-pdp",
-      "view": 379,
-      "click": 6,
-      "addToCart": 11,
+      "view": 426,
+      "click": 7,
+      "addToCart": 12,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -53103,9 +51035,9 @@
       "fecha": "2026-09-13",
       "campaignName": "Banner-PLP_40-Poleras_07.09.26",
       "campaignId": "pers-banner-plp",
-      "view": 6288,
-      "click": 93,
-      "addToCart": 39,
+      "view": 6959,
+      "click": 107,
+      "addToCart": 40,
       "purchase": 1,
       "ingresos": 53984.000174
     },
@@ -53114,9 +51046,9 @@
       "fecha": "2026-09-13",
       "campaignName": "Pop-up_Concurso_11-09-26",
       "campaignId": "pers-overlay-pdp",
-      "view": 3325,
-      "click": 228,
-      "addToCart": 78,
+      "view": 3698,
+      "click": 255,
+      "addToCart": 89,
       "purchase": 2,
       "ingresos": 212919.999809
     },
@@ -53125,9 +51057,9 @@
       "fecha": "2026-09-13",
       "campaignName": "Sticky-Multiple_Promociones-Activas_07.09.26",
       "campaignId": "pers-sticky-multiple",
-      "view": 5896,
-      "click": 38,
-      "addToCart": 20,
+      "view": 6561,
+      "click": 41,
+      "addToCart": 22,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -53136,8 +51068,8 @@
       "fecha": "2026-09-13",
       "campaignName": "Texto-PDP_Camisas-Pantalones_17.08.26",
       "campaignId": "pers-text-pdp",
-      "view": 137,
-      "click": 2,
+      "view": 159,
+      "click": 3,
       "addToCart": 4,
       "purchase": 0,
       "ingresos": 0.0
@@ -53147,9 +51079,9 @@
       "fecha": "2026-09-13",
       "campaignName": "Pop-up_Concurso_08-09-26",
       "campaignId": "pers-overlay-pdp",
-      "view": 2451,
-      "click": 178,
-      "addToCart": 21,
+      "view": 2629,
+      "click": 198,
+      "addToCart": 23,
       "purchase": 0,
       "ingresos": 0.0
     },
@@ -53169,8 +51101,8 @@
       "fecha": "2026-09-13",
       "campaignName": "Banner-PLP_DOW-Glacier_09.09.26",
       "campaignId": "pers-banner-plp",
-      "view": 525,
-      "click": 12,
+      "view": 564,
+      "click": 14,
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
@@ -53180,7 +51112,7 @@
       "fecha": "2026-09-13",
       "campaignName": "Banner-PLP_New-Arrivals_11.09.26",
       "campaignId": "pers-banner-plp",
-      "view": 78,
+      "view": 84,
       "click": 4,
       "addToCart": 0,
       "purchase": 0,
@@ -53191,7 +51123,7 @@
       "fecha": "2026-09-13",
       "campaignName": "Texto-PDP_DOW-Glacier_09.09.26",
       "campaignId": "pers-text-pdp",
-      "view": 2372,
+      "view": 2596,
       "click": 12,
       "addToCart": 0,
       "purchase": 0,
@@ -53202,7 +51134,7 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Banner-PLP_20-2da_21.08.26",
       "campaignId": "pers-banner-plp",
-      "view": 140,
+      "view": 151,
       "click": 10,
       "addToCart": 0,
       "purchase": 0,
@@ -53213,7 +51145,7 @@
       "fecha": "2026-09-13",
       "campaignName": "Sticky_20-2da-Unidad_17.07.26",
       "campaignId": "pers-pop-up-ext",
-      "view": 744,
+      "view": 781,
       "click": 6,
       "addToCart": 2,
       "purchase": 0,
@@ -53224,8 +51156,8 @@
       "fecha": "2026-09-13",
       "campaignName": "W36_Banner-PLP_Oferta-Marmota_08.09.26",
       "campaignId": "pers-banner-plp",
-      "view": 1517,
-      "click": 37,
+      "view": 1600,
+      "click": 43,
       "addToCart": 1,
       "purchase": 0,
       "ingresos": 0.0
@@ -53235,9 +51167,9 @@
       "fecha": "2026-09-13",
       "campaignName": "W36_Texto-PDP_Oferta-Marmota_08.09.26",
       "campaignId": "pers-text-pdp",
-      "view": 1417,
-      "click": 34,
-      "addToCart": 3,
+      "view": 1502,
+      "click": 36,
+      "addToCart": 2,
       "purchase": 1,
       "ingresos": 190979.999931
     },
@@ -53246,8 +51178,8 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Banner-PLP_Brooks-Brothers_02.07.26",
       "campaignId": "pers-banner-plp",
-      "view": 89,
-      "click": 16,
+      "view": 102,
+      "click": 11,
       "addToCart": 0,
       "purchase": 0,
       "ingresos": 0.0
@@ -53257,7 +51189,7 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Banner-PLP_Chaquetas_27.07.26",
       "campaignId": "pers-banner-plp",
-      "view": 11,
+      "view": 13,
       "click": 0,
       "addToCart": 0,
       "purchase": 0,
@@ -53268,22 +51200,22 @@
       "fecha": "2026-09-13",
       "campaignName": "AON_Sticky_Subscribe-15%-off_03.07.26",
       "campaignId": "pers-pop-up-ext",
-      "view": 8621,
-      "click": 267,
-      "addToCart": 128,
-      "purchase": 7,
-      "ingresos": 818783.9375383977
+      "view": 8841,
+      "click": 312,
+      "addToCart": 127,
+      "purchase": 6,
+      "ingresos": 623814.998238
     },
     {
       "marca": "Surprice",
       "fecha": "2026-09-13",
       "campaignName": "filtros-pijamas",
       "campaignId": "pers-size-filter",
-      "view": 203,
-      "click": 41,
-      "addToCart": 7,
+      "view": 227,
+      "click": 48,
+      "addToCart": 8,
       "purchase": 2,
-      "ingresos": 283204.1627614802
+      "ingresos": 305859.999871
     },
     {
       "marca": "TNF",
@@ -53449,6 +51381,1227 @@
       "addToCart": 54,
       "purchase": 1,
       "ingresos": 57890.999756
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_20%-2da_22.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 849,
+      "click": 4,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Pop-Up-Sticky_20%-2da_22.07.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 12875,
+      "click": 409,
+      "addToCart": 78,
+      "purchase": 8,
+      "ingresos": 536445.000361
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Texto-PDP_20%-2da_22.07.26",
+      "campaignId": "pers-text-pdp",
+      "view": 1633,
+      "click": 4,
+      "addToCart": 6,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-14",
+      "campaignName": "JS_Banner-Menu_Polar-Drop-Line_07.09.26",
+      "campaignId": "pers-banner-menu",
+      "view": 1,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-14",
+      "campaignName": "JS_Banner-Menu_Polar-Pullao_14.09.26",
+      "campaignId": "pers-banner-menu",
+      "view": 1278,
+      "click": 26,
+      "addToCart": 3,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-14",
+      "campaignName": "JS_Banner-PLP_Polar-Drop-Line_07.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 3,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-14",
+      "campaignName": "JS_Banner-PLP_Polar-Pullao_14.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 4025,
+      "click": 68,
+      "addToCart": 9,
+      "purchase": 1,
+      "ingresos": 109920.000186
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-14",
+      "campaignName": "JS_Pop-Up_Polar-Drop-Line_07.09.26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 9,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-14",
+      "campaignName": "JS_Pop-Up_Polar-Pullao_14.09.26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 8276,
+      "click": 422,
+      "addToCart": 57,
+      "purchase": 4,
+      "ingresos": 197133.000956
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-14",
+      "campaignName": "JS_Texto-PDP_Polar-Pullao_14.09.26",
+      "campaignId": "pers-text-pdp",
+      "view": 1688,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_Cuidado-Corporal_24.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1353,
+      "click": 8,
+      "addToCart": 3,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_Jabones-Revitalizantes_10.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 311,
+      "click": 6,
+      "addToCart": 16,
+      "purchase": 2,
+      "ingresos": 88949.999658
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_Layering_10.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 151,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_Velas_25.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 500,
+      "click": 3,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_Wallflowers_24.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 331,
+      "click": 2,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_PopUp-Sticky_Newsletter_19.06.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 10547,
+      "click": 275,
+      "addToCart": 121,
+      "purchase": 14,
+      "ingresos": 404936.998036
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-14",
+      "campaignName": "Pop-Up_Concurso_07.09.26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 9810,
+      "click": 1284,
+      "addToCart": 975,
+      "purchase": 56,
+      "ingresos": 2099264.995737999
+    },
+    {
+      "marca": "Banana",
+      "fecha": "2026-09-14",
+      "campaignName": "Pop-Up_Concurso_08-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 1161,
+      "click": 195,
+      "addToCart": 16,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Brooks",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_Sweaters-Merino_16.05.26",
+      "campaignId": "pers-banner-plp",
+      "view": 266,
+      "click": 8,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Brooks",
+      "fecha": "2026-09-14",
+      "campaignName": "Concurso_Pop-up_08-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 1087,
+      "click": 85,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "DC",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-PLP_Beveled_11.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 769,
+      "click": 42,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "DC",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-PLP_Puff_11.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 878,
+      "click": 40,
+      "addToCart": 4,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Texto-PDP_Extra-20%-Poleras_06.08.26",
+      "campaignId": "pers-text-pdp",
+      "view": 121,
+      "click": 2,
+      "addToCart": 3,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-PLP_40-Lino_14.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 4488,
+      "click": 36,
+      "addToCart": 20,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-PLP_40-Poleras_07.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 4,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 1,
+      "ingresos": 241870.000471
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-14",
+      "campaignName": "Pop-up_Concurso_11-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 3861,
+      "click": 237,
+      "addToCart": 58,
+      "purchase": 5,
+      "ingresos": 317349.999282
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-14",
+      "campaignName": "Sticky-Multiple_Promociones-Activas_07.09.26",
+      "campaignId": "pers-sticky-multiple",
+      "view": 3,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-14",
+      "campaignName": "Sticky-Multiple_Promociones-Activas_14.09.26",
+      "campaignId": "pers-sticky-multiple",
+      "view": 4761,
+      "click": 61,
+      "addToCart": 4,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-14",
+      "campaignName": "Texto-PDP_40-Lino_14.09.26",
+      "campaignId": "pers-text-pdp",
+      "view": 1863,
+      "click": 59,
+      "addToCart": 21,
+      "purchase": 3,
+      "ingresos": 262937.99974500004
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-14",
+      "campaignName": "Texto-PDP_Camisas-Pantalones_17.08.26",
+      "campaignId": "pers-text-pdp",
+      "view": 37,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Guess",
+      "fecha": "2026-09-14",
+      "campaignName": "Pop-up_Concurso_08-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 2224,
+      "click": 108,
+      "addToCart": 10,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Kipling",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-Video_Mochila-Seoul_30.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 376,
+      "click": 20,
+      "addToCart": 1,
+      "purchase": 1,
+      "ingresos": 181899.999901
+    },
+    {
+      "marca": "Mammut",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-PLP_DOW-Glacier_09.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Mammut",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-PLP_New-Arrivals_11.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 482,
+      "click": 3,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Mammut",
+      "fecha": "2026-09-14",
+      "campaignName": "Texto-PDP_DOW-Glacier_09.09.26",
+      "campaignId": "pers-text-pdp",
+      "view": 2,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_20-2da_21.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 556,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-09-14",
+      "campaignName": "Sticky_20-2da-Unidad_17.07.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 894,
+      "click": 14,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-09-14",
+      "campaignName": "W36_Banner-PLP_Oferta-Marmota_08.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 2,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-09-14",
+      "campaignName": "W37_Banner-PLP_Oferta-Marmota_14.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 867,
+      "click": 16,
+      "addToCart": 2,
+      "purchase": 1,
+      "ingresos": 61782.000153
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-09-14",
+      "campaignName": "W37_Texto-PDP_Oferta-Marmota_14.09.26",
+      "campaignId": "pers-text-pdp",
+      "view": 620,
+      "click": 26,
+      "addToCart": 8,
+      "purchase": 1,
+      "ingresos": 52069.999699
+    },
+    {
+      "marca": "Surprice",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_Brooks-Brothers_02.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 61,
+      "click": 12,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Surprice",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_Chaquetas_27.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 30,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Surprice",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Sticky_Subscribe-15%-off_03.07.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 7085,
+      "click": 291,
+      "addToCart": 70,
+      "purchase": 10,
+      "ingresos": 577785.000577
+    },
+    {
+      "marca": "Surprice",
+      "fecha": "2026-09-14",
+      "campaignName": "filtros-pijamas",
+      "campaignId": "pers-size-filter",
+      "view": 327,
+      "click": 69,
+      "addToCart": 14,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 6587,
+      "click": 19,
+      "addToCart": 5,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_PDP-Text_20%-2da_03.08.26",
+      "campaignId": "pers-text-pdp",
+      "view": 1213,
+      "click": 6,
+      "addToCart": 1,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-PLP_Trail-Running-Calzado_12.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 26,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-PLP_Trail-Running-Impermeable_12.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 3,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-09-14",
+      "campaignName": "PopUp-Sticky_2da-Unidad-20%_31.05.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 4701,
+      "click": 96,
+      "addToCart": 7,
+      "purchase": 2,
+      "ingresos": 206980.00058599998
+    },
+    {
+      "marca": "UGG",
+      "fecha": "2026-09-14",
+      "campaignName": "Pop-up_Concurso_08-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 1248,
+      "click": 169,
+      "addToCart": 11,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "UGG",
+      "fecha": "2026-09-14",
+      "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
+      "campaignId": "pers-text-pdp-scroll",
+      "view": 513,
+      "click": 4,
+      "addToCart": 1,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-PLP_Wild-Rose_17.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 11,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-Video_Bars-Review_20.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 22,
+      "click": 3,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-14",
+      "campaignName": "AON_Banner-Video_Grabado_10.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 425,
+      "click": 11,
+      "addToCart": 4,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-PLP_Bundle-Bras_10.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 488,
+      "click": 59,
+      "addToCart": 39,
+      "purchase": 1,
+      "ingresos": 84989.999947
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-PLP_Bundle-Pijamas_10.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 762,
+      "click": 55,
+      "addToCart": 50,
+      "purchase": 1,
+      "ingresos": 89989.999735
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-14",
+      "campaignName": "Banner-Video-PLP_Body-Care_16.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 27,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-14",
+      "campaignName": "Pop-Up_Concurso-1M-VS_04.09.26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 12544,
+      "click": 1088,
+      "addToCart": 372,
+      "purchase": 7,
+      "ingresos": 475861.00034200004
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-14",
+      "campaignName": "filtros-pijamas",
+      "campaignId": "pers-size-filter",
+      "view": 1842,
+      "click": 95,
+      "addToCart": 18,
+      "purchase": 2,
+      "ingresos": 173971.000093
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_20%-2da_22.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 552,
+      "click": 5,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Pop-Up-Sticky_20%-2da_22.07.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 10872,
+      "click": 330,
+      "addToCart": 63,
+      "purchase": 8,
+      "ingresos": 767465.999504
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Texto-PDP_20%-2da_22.07.26",
+      "campaignId": "pers-text-pdp",
+      "view": 5,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-15",
+      "campaignName": "JS_Banner-Menu_Polar-Pullao_14.09.26",
+      "campaignId": "pers-banner-menu",
+      "view": 1314,
+      "click": 13,
+      "addToCart": 6,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-15",
+      "campaignName": "JS_Banner-PLP_Polar-Pullao_14.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 3807,
+      "click": 42,
+      "addToCart": 4,
+      "purchase": 2,
+      "ingresos": 94680.999188
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-15",
+      "campaignName": "JS_Pop-Up_Polar-Drop-Line_07.09.26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 1,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-15",
+      "campaignName": "JS_Pop-Up_Polar-Pullao_14.09.26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 8353,
+      "click": 369,
+      "addToCart": 29,
+      "purchase": 1,
+      "ingresos": 23990.00046
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-15",
+      "campaignName": "JS_Pop-Up_Saco-Marmot_24.08.26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 1,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-15",
+      "campaignName": "JS_Texto-PDP_Polar-Drop-Line_07.09.26",
+      "campaignId": "pers-text-pdp",
+      "view": 1,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-09-15",
+      "campaignName": "JS_Texto-PDP_Polar-Pullao_14.09.26",
+      "campaignId": "pers-text-pdp",
+      "view": 1159,
+      "click": 12,
+      "addToCart": 1,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_Cuidado-Corporal_24.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 745,
+      "click": 4,
+      "addToCart": 8,
+      "purchase": 1,
+      "ingresos": 24989.999664
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_Jabones-Revitalizantes_10.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 194,
+      "click": 2,
+      "addToCart": 5,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_Layering_10.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 137,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_Velas_25.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 308,
+      "click": 1,
+      "addToCart": 3,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_Wallflowers_24.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 286,
+      "click": 4,
+      "addToCart": 1,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_PopUp-Sticky_Newsletter_19.06.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 8100,
+      "click": 216,
+      "addToCart": 114,
+      "purchase": 9,
+      "ingresos": 282824.999824
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-09-15",
+      "campaignName": "Pop-Up_Concurso_07.09.26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 7391,
+      "click": 874,
+      "addToCart": 669,
+      "purchase": 29,
+      "ingresos": 955996.997841
+    },
+    {
+      "marca": "Banana",
+      "fecha": "2026-09-15",
+      "campaignName": "Pop-Up_Concurso_08-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 1127,
+      "click": 151,
+      "addToCart": 9,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Brooks",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_Sweaters-Merino_16.05.26",
+      "campaignId": "pers-banner-plp",
+      "view": 342,
+      "click": 7,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Brooks",
+      "fecha": "2026-09-15",
+      "campaignName": "Concurso_Pop-up_08-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 1093,
+      "click": 98,
+      "addToCart": 3,
+      "purchase": 1,
+      "ingresos": 54000.000349
+    },
+    {
+      "marca": "DC",
+      "fecha": "2026-09-15",
+      "campaignName": "Banner-PLP_Beveled_11.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 752,
+      "click": 30,
+      "addToCart": 4,
+      "purchase": 1,
+      "ingresos": 62991.000336
+    },
+    {
+      "marca": "DC",
+      "fecha": "2026-09-15",
+      "campaignName": "Banner-PLP_Puff_11.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 657,
+      "click": 26,
+      "addToCart": 1,
+      "purchase": 1,
+      "ingresos": 69989.99964
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-15",
+      "campaignName": "Banner-PLP_40-Lino_14.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 5610,
+      "click": 47,
+      "addToCart": 11,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-15",
+      "campaignName": "Pop-up_Concurso_11-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 4046,
+      "click": 317,
+      "addToCart": 54,
+      "purchase": 2,
+      "ingresos": 120150.000069
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-15",
+      "campaignName": "Sticky-Multiple_Promociones-Activas_14.09.26",
+      "campaignId": "pers-sticky-multiple",
+      "view": 6447,
+      "click": 45,
+      "addToCart": 2,
+      "purchase": 2,
+      "ingresos": 94139.99982299999
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-09-15",
+      "campaignName": "Texto-PDP_40-Lino_14.09.26",
+      "campaignId": "pers-text-pdp",
+      "view": 2533,
+      "click": 70,
+      "addToCart": 27,
+      "purchase": 1,
+      "ingresos": 63190.000155
+    },
+    {
+      "marca": "Guess",
+      "fecha": "2026-09-15",
+      "campaignName": "Pop-up_Concurso_08-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 2082,
+      "click": 130,
+      "addToCart": 16,
+      "purchase": 2,
+      "ingresos": 922230.0002220001
+    },
+    {
+      "marca": "Kipling",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-Video_Mochila-Seoul_30.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 415,
+      "click": 18,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Mammut",
+      "fecha": "2026-09-15",
+      "campaignName": "Banner-PLP_New-Arrivals_11.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 359,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_20-2da_21.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 102,
+      "click": 2,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-09-15",
+      "campaignName": "Sticky_20-2da-Unidad_17.07.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 507,
+      "click": 10,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-09-15",
+      "campaignName": "W37_Banner-PLP_Oferta-Marmota_14.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1017,
+      "click": 18,
+      "addToCart": 4,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-09-15",
+      "campaignName": "W37_Texto-PDP_Oferta-Marmota_14.09.26",
+      "campaignId": "pers-text-pdp",
+      "view": 866,
+      "click": 29,
+      "addToCart": 5,
+      "purchase": 2,
+      "ingresos": 113370.000078
+    },
+    {
+      "marca": "Surprice",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_Brooks-Brothers_02.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 24,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Surprice",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_Chaquetas_27.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 20,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Surprice",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Sticky_Subscribe-15%-off_03.07.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 6335,
+      "click": 255,
+      "addToCart": 44,
+      "purchase": 4,
+      "ingresos": 130511.99962799999
+    },
+    {
+      "marca": "Surprice",
+      "fecha": "2026-09-15",
+      "campaignName": "filtros-pijamas",
+      "campaignId": "pers-size-filter",
+      "view": 304,
+      "click": 39,
+      "addToCart": 8,
+      "purchase": 1,
+      "ingresos": 74990.000371
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 4936,
+      "click": 28,
+      "addToCart": 12,
+      "purchase": 2,
+      "ingresos": 507975.000151
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_PDP-Text_20%-2da_03.08.26",
+      "campaignId": "pers-text-pdp",
+      "view": 1089,
+      "click": 15,
+      "addToCart": 3,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-09-15",
+      "campaignName": "Banner-PLP_Trail-Running-Calzado_12.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 32,
+      "click": 1,
+      "addToCart": 3,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-09-15",
+      "campaignName": "Banner-PLP_Trail-Running-Impermeable_12.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 3,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-09-15",
+      "campaignName": "PopUp-Sticky_2da-Unidad-20%_31.05.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 3516,
+      "click": 41,
+      "addToCart": 5,
+      "purchase": 1,
+      "ingresos": 84889.999649
+    },
+    {
+      "marca": "UGG",
+      "fecha": "2026-09-15",
+      "campaignName": "Pop-up_Concurso_08-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 1085,
+      "click": 83,
+      "addToCart": 8,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "UGG",
+      "fecha": "2026-09-15",
+      "campaignName": "Texto-Scroll_20%-Kit-Cuidado_28.07.26",
+      "campaignId": "pers-text-pdp-scroll",
+      "view": 282,
+      "click": 4,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-PLP_Wild-Rose_17.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 12,
+      "click": 2,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-Video_Bars-Review_20.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 9,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-15",
+      "campaignName": "AON_Banner-Video_Grabado_10.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 405,
+      "click": 4,
+      "addToCart": 2,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-15",
+      "campaignName": "Banner-PLP_Bundle-Bras_10.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 415,
+      "click": 48,
+      "addToCart": 76,
+      "purchase": 1,
+      "ingresos": 84989.999947
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-15",
+      "campaignName": "Banner-PLP_Bundle-Pijamas_10.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 850,
+      "click": 56,
+      "addToCart": 60,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-15",
+      "campaignName": "Banner-Video-PLP_Body-Care_16.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 42,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-15",
+      "campaignName": "Pop-Up_Concurso-1M-VS_04.09.26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 12805,
+      "click": 1270,
+      "addToCart": 265,
+      "purchase": 8,
+      "ingresos": 721963.000429
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-09-15",
+      "campaignName": "filtros-pijamas",
+      "campaignId": "pers-size-filter",
+      "view": 2062,
+      "click": 110,
+      "addToCart": 38,
+      "purchase": 1,
+      "ingresos": 43190.000061
     }
   ]
 }
