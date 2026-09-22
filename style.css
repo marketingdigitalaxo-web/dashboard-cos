@@ -529,7 +529,6 @@ nav.tabs button[aria-selected="true"] {
      (backdrop-filter), así que sin esto el dropdown "según..." quedaría
      atrapado detrás de la tarjeta siguiente (mismo caso que .filters). */
   position: relative;
-  z-index: 5;
   border-left: 3px solid var(--accent);
 }
 .best-campaign-card .card-head h2 {
