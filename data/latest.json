@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T13:38:13Z",
+  "generated_at": "2026-09-22T16:16:44Z",
   "rows": [
     {
       "marca": "Andes",
@@ -43960,17 +43960,6 @@
     {
       "marca": "Andes",
       "fecha": "2026-09-01",
-      "campaignName": "JS_Pop-Up_Saco-Marmot_24.08.26",
-      "campaignId": "pers-overlay-pdp",
-      "view": 1,
-      "click": 0,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "Andes",
-      "fecha": "2026-09-01",
       "campaignName": "JS_Texto-PDP_Carpa-3-estaciones_31.08.26",
       "campaignId": "pers-text-pdp",
       "view": 768,
@@ -49724,17 +49713,6 @@
     {
       "marca": "Andes",
       "fecha": "2026-09-11",
-      "campaignName": "JS_Pop-Up_Saco-Marmot_24.08.26",
-      "campaignId": "pers-overlay-pdp",
-      "view": 0,
-      "click": 2,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "Andes",
-      "fecha": "2026-09-11",
       "campaignName": "JS_Texto-PDP_Polar-Drop-Line_07.09.26",
       "campaignId": "pers-text-pdp",
       "view": 405,
@@ -52107,17 +52085,6 @@
       "addToCart": 29,
       "purchase": 1,
       "ingresos": 23990.00046
-    },
-    {
-      "marca": "Andes",
-      "fecha": "2026-09-15",
-      "campaignName": "JS_Pop-Up_Saco-Marmot_24.08.26",
-      "campaignId": "pers-overlay-pdp",
-      "view": 1,
-      "click": 0,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
