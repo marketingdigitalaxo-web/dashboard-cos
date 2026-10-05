@@ -2,11 +2,15 @@ name: Actualizar datos del dashboard
 
 on:
   schedule:
-    # 12:00 UTC ≈ 08:00-09:00 en Chile continental (según horario de
-    # verano). Deja un colchón de varias horas después de que corra el
-    # trigger diario de Apps Script (Codigo.gs, HORA_TRIGGER) para
-    # asegurar que la hoja ya esté actualizada cuando este workflow lea.
-    - cron: '0 12 * * *'
+    # Objetivo: correr a las 07:00 y a las 13:00 hora de Chile, todo el año.
+    # El cron de GitHub va siempre en UTC y Chile cambia entre UTC-3
+    # (verano) y UTC-4 (invierno), así que se programan las dos horas UTC
+    # posibles de cada corrida y el paso "Verificar hora de Chile" deja
+    # pasar solo la que cae realmente en 07:xx o 13:xx hora de Santiago.
+    - cron: '0 10 * * *'  # 07:00 Chile en verano (UTC-3)
+    - cron: '0 11 * * *'  # 07:00 Chile en invierno (UTC-4)
+    - cron: '0 16 * * *'  # 13:00 Chile en verano (UTC-3)
+    - cron: '0 17 * * *'  # 13:00 Chile en invierno (UTC-4)
   workflow_dispatch: {} # permite correrlo manualmente desde la pestaña "Actions"
 
 permissions:
@@ -16,24 +20,41 @@ jobs:
   actualizar-datos:
     runs-on: ubuntu-latest
     steps:
+      - name: Verificar hora de Chile
+        id: guard
+        run: |
+          HORA=$(TZ=America/Santiago date +%H)
+          echo "Hora actual en Chile: $HORA h"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$HORA" = "07" ] || [ "$HORA" = "13" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Fuera de las 07:00 / 13:00 de Chile, se omite esta corrida."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Descargar repositorio
+        if: steps.guard.outputs.run == 'true'
         uses: actions/checkout@v4
 
       - name: Preparar Python
+        if: steps.guard.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Instalar dependencias
+        if: steps.guard.outputs.run == 'true'
         run: pip install -r requirements.txt
 
       - name: Descargar datos desde Google Sheets
+        if: steps.guard.outputs.run == 'true'
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
         run: python scripts/fetch_data.py
 
       - name: Commitear datos si cambiaron
+        if: steps.guard.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
