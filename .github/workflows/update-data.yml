@@ -2,59 +2,53 @@ name: Actualizar datos del dashboard
 
 on:
   schedule:
-    # Objetivo: correr a las 07:00 y a las 13:00 hora de Chile, todo el año.
-    # El cron de GitHub va siempre en UTC y Chile cambia entre UTC-3
-    # (verano) y UTC-4 (invierno), así que se programan las dos horas UTC
-    # posibles de cada corrida y el paso "Verificar hora de Chile" deja
-    # pasar solo la que cae realmente en 07:xx o 13:xx hora de Santiago.
-    - cron: '0 10 * * *'  # 07:00 Chile en verano (UTC-3)
-    - cron: '0 11 * * *'  # 07:00 Chile en invierno (UTC-4)
-    - cron: '0 16 * * *'  # 13:00 Chile en verano (UTC-3)
-    - cron: '0 17 * * *'  # 13:00 Chile en invierno (UTC-4)
+    # Objetivo: actualizar a las 08:00 y a las 14:00 hora de Chile.
+    # El cron de GitHub va en UTC y Chile cambia entre UTC-3 (verano) y
+    # UTC-4 (invierno), así que se programan ambas horas UTC posibles.
+    # GitHub suele atrasar los cron (a veces horas), por eso NO se filtra
+    # por hora exacta: una corrida extra solo vuelve a bajar la planilla.
+    # Se usa el minuto :07 porque los cron en punto son los que más se
+    # atrasan o se pierden.
+    - cron: '7 11 * * *'  # 08:07 Chile verano (UTC-3) / 07:07 invierno
+    - cron: '7 12 * * *'  # 09:07 Chile verano / 08:07 invierno (UTC-4)
+    - cron: '7 17 * * *'  # 14:07 Chile verano (UTC-3) / 13:07 invierno
+    - cron: '7 18 * * *'  # 15:07 Chile verano / 14:07 invierno (UTC-4)
   workflow_dispatch: {} # permite correrlo manualmente desde la pestaña "Actions"
 
 permissions:
   contents: write
 
+# Evita que dos corridas atrasadas choquen al hacer push.
+concurrency:
+  group: actualizar-datos
+  cancel-in-progress: false
+
 jobs:
   actualizar-datos:
     runs-on: ubuntu-latest
     steps:
-      - name: Verificar hora de Chile
-        id: guard
+      - name: Mostrar hora de Chile
         run: |
-          HORA=$(TZ=America/Santiago date +%H)
-          echo "Hora actual en Chile: $HORA h"
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$HORA" = "07" ] || [ "$HORA" = "13" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Fuera de las 07:00 / 13:00 de Chile, se omite esta corrida."
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
+          echo "Hora actual en Chile: $(TZ=America/Santiago date '+%Y-%m-%d %H:%M')"
 
       - name: Descargar repositorio
-        if: steps.guard.outputs.run == 'true'
         uses: actions/checkout@v4
 
       - name: Preparar Python
-        if: steps.guard.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Instalar dependencias
-        if: steps.guard.outputs.run == 'true'
         run: pip install -r requirements.txt
 
       - name: Descargar datos desde Google Sheets
-        if: steps.guard.outputs.run == 'true'
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
         run: python scripts/fetch_data.py
 
       - name: Commitear datos si cambiaron
-        if: steps.guard.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -62,6 +56,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Sin cambios en los datos, no se crea commit."
           else
-            git commit -m "Actualiza datos del dashboard ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git commit -m "Actualiza datos del dashboard ($(TZ=America/Santiago date +'%Y-%m-%d %H:%M') Chile)"
+            git pull --rebase
             git push
           fi
