@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T17:03:22Z",
+  "generated_at": "2026-10-14T20:36:22Z",
   "rows": [
     {
       "marca": "Andes",
@@ -62594,50 +62594,6 @@
     {
       "marca": "Andes",
       "fecha": "2026-10-02",
-      "campaignName": "Cyber_Banner-PLP_Sale-Bototos_04.10.26",
-      "campaignId": "pers-banner-plp",
-      "view": 1,
-      "click": 0,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "Andes",
-      "fecha": "2026-10-02",
-      "campaignName": "Cyber_Banner-PLP_Sale-Escalada_04.10.26",
-      "campaignId": "pers-banner-plp",
-      "view": 1,
-      "click": 1,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "Andes",
-      "fecha": "2026-10-02",
-      "campaignName": "Cyber_Banner-PLP_Sale-Nuptse_04.10.26",
-      "campaignId": "pers-banner-plp",
-      "view": 2,
-      "click": 1,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "Andes",
-      "fecha": "2026-10-02",
-      "campaignName": "Cyber_Banner-PLP_Sale-Sacos_04.10.26",
-      "campaignId": "pers-banner-plp",
-      "view": 2,
-      "click": 1,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
-    },
-    {
-      "marca": "Andes",
-      "fecha": "2026-10-02",
       "campaignName": "Cyber_Sticky_20%-2da_04.10.26",
       "campaignId": "pers-pop-up-ext",
       "view": 1,
@@ -64202,8 +64158,8 @@
       "fecha": "2026-10-04",
       "campaignName": "Cyber_Banner-PLP_Sale-Bototos_04.10.26",
       "campaignId": "pers-banner-plp",
-      "view": 235,
-      "click": 252,
+      "view": 570,
+      "click": 63,
       "addToCart": 45,
       "purchase": 2,
       "ingresos": 398252.99970100005
@@ -64213,8 +64169,8 @@
       "fecha": "2026-10-04",
       "campaignName": "Cyber_Banner-PLP_Sale-Escalada_04.10.26",
       "campaignId": "pers-banner-plp",
-      "view": 215,
-      "click": 210,
+      "view": 430,
+      "click": 34,
       "addToCart": 14,
       "purchase": 1,
       "ingresos": 179970.000294
@@ -64225,7 +64181,7 @@
       "campaignName": "Cyber_Banner-PLP_Sale-Mochilas_04.10.26",
       "campaignId": "pers-banner-plp",
       "view": 239,
-      "click": 68,
+      "click": 28,
       "addToCart": 10,
       "purchase": 0,
       "ingresos": 0.0
@@ -66160,8 +66116,8 @@
       "fecha": "2026-10-05",
       "campaignName": "Cyber_Banner-PLP_Sale-Bototos_04.10.26",
       "campaignId": "pers-banner-plp",
-      "view": 190,
-      "click": 125,
+      "view": 480,
+      "click": 53,
       "addToCart": 15,
       "purchase": 2,
       "ingresos": 254979.999475
@@ -66171,8 +66127,8 @@
       "fecha": "2026-10-05",
       "campaignName": "Cyber_Banner-PLP_Sale-Escalada_04.10.26",
       "campaignId": "pers-banner-plp",
-      "view": 194,
-      "click": 176,
+      "view": 388,
+      "click": 32,
       "addToCart": 31,
       "purchase": 2,
       "ingresos": 289883.999819
@@ -66183,7 +66139,7 @@
       "campaignName": "Cyber_Banner-PLP_Sale-Mochilas_04.10.26",
       "campaignId": "pers-banner-plp",
       "view": 230,
-      "click": 75,
+      "click": 55,
       "addToCart": 9,
       "purchase": 1,
       "ingresos": 94489.999569
@@ -68481,8 +68437,8 @@
       "fecha": "2026-10-06",
       "campaignName": "Cyber_Banner-PLP_Sale-Bototos_04.10.26",
       "campaignId": "pers-banner-plp",
-      "view": 131,
-      "click": 139,
+      "view": 361,
+      "click": 39,
       "addToCart": 36,
       "purchase": 2,
       "ingresos": 213050.999721
@@ -68492,8 +68448,8 @@
       "fecha": "2026-10-06",
       "campaignName": "Cyber_Banner-PLP_Sale-Escalada_04.10.26",
       "campaignId": "pers-banner-plp",
-      "view": 139,
-      "click": 77,
+      "view": 278,
+      "click": 22,
       "addToCart": 19,
       "purchase": 1,
       "ingresos": 175950.000288
@@ -70824,8 +70780,8 @@
       "fecha": "2026-10-07",
       "campaignName": "Cyber_Banner-PLP_Sale-Bototos_04.10.26",
       "campaignId": "pers-banner-plp",
-      "view": 114,
-      "click": 142,
+      "view": 341,
+      "click": 37,
       "addToCart": 45,
       "purchase": 4,
       "ingresos": 460122.99949200003
@@ -70835,8 +70791,8 @@
       "fecha": "2026-10-07",
       "campaignName": "Cyber_Banner-PLP_Sale-Escalada_04.10.26",
       "campaignId": "pers-banner-plp",
-      "view": 125,
-      "click": 87,
+      "view": 250,
+      "click": 20,
       "addToCart": 12,
       "purchase": 1,
       "ingresos": 97869.999682
@@ -70847,7 +70803,7 @@
       "campaignName": "Cyber_Banner-PLP_Sale-Mochilas_04.10.26",
       "campaignId": "pers-banner-plp",
       "view": 157,
-      "click": 44,
+      "click": 14,
       "addToCart": 3,
       "purchase": 0,
       "ingresos": 0.0
@@ -73095,17 +73051,6 @@
       "addToCart": 4,
       "purchase": 1,
       "ingresos": 116973.000005
-    },
-    {
-      "marca": "Andes",
-      "fecha": "2026-10-08",
-      "campaignName": "Cyber_Banner-PLP_Sale-Escalada_04.10.26",
-      "campaignId": "pers-banner-plp",
-      "view": 0,
-      "click": 1,
-      "addToCart": 0,
-      "purchase": 0,
-      "ingresos": 0.0
     },
     {
       "marca": "Andes",
