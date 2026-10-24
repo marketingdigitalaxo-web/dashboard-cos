@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T14:25:38Z",
+  "generated_at": "2026-10-24T15:50:38Z",
   "rows": [
     {
       "marca": "Andes",
@@ -79870,7 +79870,7 @@
       "click": 215,
       "addToCart": 98,
       "purchase": 2,
-      "ingresos": 100460.000507
+      "ingresos": 100460.00050699999
     },
     {
       "marca": "GAP",
@@ -80057,7 +80057,7 @@
       "click": 220,
       "addToCart": 31,
       "purchase": 3,
-      "ingresos": 314959.999635
+      "ingresos": 314959.999636
     },
     {
       "marca": "TNF",
@@ -80134,7 +80134,7 @@
       "click": 55,
       "addToCart": 12,
       "purchase": 4,
-      "ingresos": 823815.999503
+      "ingresos": 823815.999502
     },
     {
       "marca": "UGG",
@@ -80255,7 +80255,7 @@
       "click": 135,
       "addToCart": 47,
       "purchase": 2,
-      "ingresos": 238960.999962
+      "ingresos": 238960.99996299998
     }
   ]
 }
