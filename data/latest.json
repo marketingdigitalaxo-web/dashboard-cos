@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T21:18:55Z",
+  "generated_at": "2026-10-24T14:25:38Z",
   "rows": [
     {
       "marca": "Andes",
@@ -79144,7 +79144,7 @@
       "click": 154,
       "addToCart": 42,
       "purchase": 2,
-      "ingresos": 58580.000251
+      "ingresos": 58580.00025
     },
     {
       "marca": "GAP",
@@ -79177,7 +79177,7 @@
       "click": 228,
       "addToCart": 90,
       "purchase": 7,
-      "ingresos": 275981.999492
+      "ingresos": 275981.999491
     },
     {
       "marca": "GAP",
@@ -79331,7 +79331,7 @@
       "click": 25,
       "addToCart": 14,
       "purchase": 4,
-      "ingresos": 395363.999571
+      "ingresos": 395363.999572
     },
     {
       "marca": "Marmot",
@@ -79640,6 +79640,622 @@
       "addToCart": 50,
       "purchase": 2,
       "ingresos": 353853.0003
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_Pop-Up-Sticky_20%-2da_22.07.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 1,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Camping-Week_19.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1921,
+      "click": 13,
+      "addToCart": 7,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Andes",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Newsletter_15.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1666,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_Banner-PLP_Cuidado-Corporal_24.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 239,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_Banner-PLP_Jabones-Revitalizantes_10.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 290,
+      "click": 6,
+      "addToCart": 13,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_Banner-PLP_Layering_10.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 127,
+      "click": 1,
+      "addToCart": 4,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_Banner-PLP_Velas_25.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1173,
+      "click": 11,
+      "addToCart": 4,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_Banner-PLP_Wallflowers_24.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 404,
+      "click": 7,
+      "addToCart": 2,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Concurso-Opt-In_13.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1409,
+      "click": 21,
+      "addToCart": 9,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "BBW",
+      "fecha": "2026-10-23",
+      "campaignName": "Pop-Up_Concurso_07.09.26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 1512,
+      "click": 171,
+      "addToCart": 193,
+      "purchase": 1,
+      "ingresos": 50983.00022
+    },
+    {
+      "marca": "Banana",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Concurso-Opt-In_13.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 368,
+      "click": 7,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Banana",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_MSS-40_19.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 174,
+      "click": 4,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Banana",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_New-Arrivals_08.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1150,
+      "click": 6,
+      "addToCart": 3,
+      "purchase": 1,
+      "ingresos": 414000.000054
+    },
+    {
+      "marca": "Banana",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Todo-10-Extra_22.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 0,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 1,
+      "ingresos": 500799.999977
+    },
+    {
+      "marca": "Banana",
+      "fecha": "2026-10-23",
+      "campaignName": "Texto-PDP_MSS-40_19.10.26",
+      "campaignId": "pers-text-pdp",
+      "view": 2731,
+      "click": 8,
+      "addToCart": 1,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Banana",
+      "fecha": "2026-10-23",
+      "campaignName": "Texto-PDP_Todo-10-Extra_22.10.26",
+      "campaignId": "pers-text-pdp",
+      "view": 4,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Brooks",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Concurso-Opt-In_13.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1794,
+      "click": 7,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "DC",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Concurso-Opt-In_14.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 3186,
+      "click": 7,
+      "addToCart": 2,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_40-MSS_22.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 5532,
+      "click": 158,
+      "addToCart": 31,
+      "purchase": 1,
+      "ingresos": 39189.999652
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Concurso-Opt-In_13.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1046,
+      "click": 11,
+      "addToCart": 1,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-10-23",
+      "campaignName": "Pop-up_Concurso_11-09-26",
+      "campaignId": "pers-overlay-pdp",
+      "view": 3817,
+      "click": 215,
+      "addToCart": 98,
+      "purchase": 2,
+      "ingresos": 100460.000507
+    },
+    {
+      "marca": "GAP",
+      "fecha": "2026-10-23",
+      "campaignName": "Texto-PDP_40-MSS_22.10.26",
+      "campaignId": "pers-text-pdp",
+      "view": 15710,
+      "click": 315,
+      "addToCart": 66,
+      "purchase": 1,
+      "ingresos": 69759.999845
+    },
+    {
+      "marca": "Guess",
+      "fecha": "2026-10-23",
+      "campaignName": "Texto-PDP_Poleras-50_21.10.26",
+      "campaignId": "pers-text-pdp",
+      "view": 2420,
+      "click": 14,
+      "addToCart": 10,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Kipling",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Concurso-Opt-In_13.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1594,
+      "click": 18,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Kliper",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Newsletter_14.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 223,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Kliper",
+      "fecha": "2026-10-23",
+      "campaignName": "Sticky-Multiple_Mid-Season-Sale_22.10.26",
+      "campaignId": "pers-sticky-multiple",
+      "view": 2794,
+      "click": 34,
+      "addToCart": 4,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Lacoste",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-Menu_Poleras-30_21.10.26",
+      "campaignId": "pers-banner-menu",
+      "view": 1459,
+      "click": 16,
+      "addToCart": 1,
+      "purchase": 1,
+      "ingresos": 108485.999838
+    },
+    {
+      "marca": "Lacoste",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Newsletter_15.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 293,
+      "click": 2,
+      "addToCart": 1,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Lacoste",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Poleras-30_21.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 2823,
+      "click": 33,
+      "addToCart": 2,
+      "purchase": 1,
+      "ingresos": 166983.000202
+    },
+    {
+      "marca": "Lacoste",
+      "fecha": "2026-10-23",
+      "campaignName": "Sticky-Multiple_Promociones_21.10.26",
+      "campaignId": "pers-sticky-multiple",
+      "view": 3812,
+      "click": 35,
+      "addToCart": 8,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Mammut",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_DOD-10-Extra_22.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Mammut",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Newsletter_16.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 726,
+      "click": 2,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Mammut",
+      "fecha": "2026-10-23",
+      "campaignName": "Texto-PDP_DOD-10-Extra_22.10.26",
+      "campaignId": "pers-text-pdp",
+      "view": 2,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_30-Polar-Drop-Line_21.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 352,
+      "click": 2,
+      "addToCart": 3,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Newsletter_16.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 182,
+      "click": 4,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "Marmot",
+      "fecha": "2026-10-23",
+      "campaignName": "Sticky-Multi_Promociones-Activas_21.10.26",
+      "campaignId": "pers-sticky-multiple",
+      "view": 686,
+      "click": 4,
+      "addToCart": 0,
+      "purchase": 1,
+      "ingresos": 77480.000117
+    },
+    {
+      "marca": "Surprice",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Concurso-Opt-In_13.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 2358,
+      "click": 24,
+      "addToCart": 20,
+      "purchase": 1,
+      "ingresos": 87910.000095
+    },
+    {
+      "marca": "Surprice",
+      "fecha": "2026-10-23",
+      "campaignName": "Sticky_Concurso-Opt-In_22.10.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 5582,
+      "click": 220,
+      "addToCart": 31,
+      "purchase": 3,
+      "ingresos": 314959.999635
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_Banner-PLP_20%-2da_03.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 5629,
+      "click": 21,
+      "addToCart": 6,
+      "purchase": 1,
+      "ingresos": 137090.000318
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_PDP-Text_20%-2da_03.08.26",
+      "campaignId": "pers-text-pdp",
+      "view": 1156,
+      "click": 6,
+      "addToCart": 2,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Newsletter_22.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 820,
+      "click": 9,
+      "addToCart": 5,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Trail-Running-Calzado_12.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 27,
+      "click": 2,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Trail-Running-Impermeable_12.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 6,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-10-23",
+      "campaignName": "Carousel-PLP_Red-Box_20102026",
+      "campaignId": "pers-slider-plp",
+      "view": 662,
+      "click": 439,
+      "addToCart": 1,
+      "purchase": 1,
+      "ingresos": 105189.99976
+    },
+    {
+      "marca": "TNF",
+      "fecha": "2026-10-23",
+      "campaignName": "PopUp-Sticky_2da-Unidad-20%_31.05.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 2777,
+      "click": 55,
+      "addToCart": 12,
+      "purchase": 4,
+      "ingresos": 823815.999503
+    },
+    {
+      "marca": "UGG",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Concurso-Opt-In_13.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 419,
+      "click": 4,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_Banner-Video_Bars-Review_20.07.26",
+      "campaignId": "pers-banner-plp",
+      "view": 28,
+      "click": 0,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_Banner-Video_Grabado_10.08.26",
+      "campaignId": "pers-banner-plp",
+      "view": 636,
+      "click": 7,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-10-23",
+      "campaignName": "AON_Banner-Video_Influencer-Very-Sexy_29.09.26",
+      "campaignId": "pers-banner-plp",
+      "view": 26,
+      "click": 1,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Concurso-Opt-In_13.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 3837,
+      "click": 49,
+      "addToCart": 46,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Home-Fragance-60_22.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1756,
+      "click": 66,
+      "addToCart": 38,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_Pink-Panty-Bra_23.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 284,
+      "click": 15,
+      "addToCart": 11,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-PLP_VS-Panty-Bra_23.10.26",
+      "campaignId": "pers-banner-plp",
+      "view": 1504,
+      "click": 60,
+      "addToCart": 19,
+      "purchase": 1,
+      "ingresos": 20990.000426
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-10-23",
+      "campaignName": "Banner-Video-PLP_Body-Care_16.06.26",
+      "campaignId": "pers-banner-plp",
+      "view": 47,
+      "click": 2,
+      "addToCart": 0,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-10-23",
+      "campaignName": "Sticky_Concurso-Opt-Inn_15.10.26",
+      "campaignId": "pers-pop-up-ext",
+      "view": 17107,
+      "click": 594,
+      "addToCart": 74,
+      "purchase": 0,
+      "ingresos": 0.0
+    },
+    {
+      "marca": "VS",
+      "fecha": "2026-10-23",
+      "campaignName": "filtros-pijamas",
+      "campaignId": "pers-size-filter",
+      "view": 2310,
+      "click": 135,
+      "addToCart": 47,
+      "purchase": 2,
+      "ingresos": 238960.999962
     }
   ]
 }
