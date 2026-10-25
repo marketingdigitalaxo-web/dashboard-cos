@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T14:56:00Z",
+  "generated_at": "2026-10-25T16:03:37Z",
   "rows": [
     {
       "marca": "Andes",
@@ -80453,7 +80453,7 @@
       "click": 155,
       "addToCart": 93,
       "purchase": 3,
-      "ingresos": 131360.000216
+      "ingresos": 131360.00021600001
     },
     {
       "marca": "GAP",
@@ -80464,7 +80464,7 @@
       "click": 265,
       "addToCart": 90,
       "purchase": 3,
-      "ingresos": 338319.999853
+      "ingresos": 338319.999854
     },
     {
       "marca": "Guess",
