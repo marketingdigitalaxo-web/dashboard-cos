@@ -61,6 +61,8 @@ const USERS = {
   'egumucio@grupoaxo.com': 'Emi',
   'cgraciag@grupoaxo.com': 'Cata',
   'tcontreras@grupoaxo.com': 'Than',
+   'abrellenthin@grupoaxo.com': 'Ama',
+   
    
 };
 const AUTH_STORAGE_KEY = 'dashboard_auth_v1';
